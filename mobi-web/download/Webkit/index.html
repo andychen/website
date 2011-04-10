@@ -1,0 +1,19 @@
+<?php
+$page->title('Download')
+     ->navbar_image('download')
+     ->breadcrumbs('Download')
+     ->breadcrumb_home();
+
+$page->content_begin();
+?>
+
+	<p class="nonfocal">Click the link below to download <?=$download_item?> for your <?=$device_name?>.</p>
+
+	<div class="focal">
+		<?=$instructions?>
+		<div class="formbuttons">
+			<a class="formbutton" href="<?=$download_url?>"><div>Continue</div></a>
+		</div>
+	</div>
+	
+<? $page->content_end(); ?>

@@ -1,0 +1,18 @@
+<?php
+$page->title("Events: Browse by Category")
+     ->navbar_image('calendar')
+     ->breadcrumbs('Browse By Category');
+
+$page->content_begin();
+?>
+			
+	<ul class="nav">
+            <? foreach($categorys as $category) { ?>
+                <? if(hasSubcategories($category)) { ?>
+		   <li><a href="<?=subCategorysURL($category)?>"><?=ucname($category->name)?></a></li>
+                <? } else { ?>
+		   <li><a href="<?=categoryURL($category, $type)?>"><?=ucname($category->name)?></a></li>
+                <? } ?>
+            <? } ?>
+	</ul>
+<? $page->content_end(); ?>

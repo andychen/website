@@ -1,0 +1,91 @@
+{
+   "banner" : { 
+     "id" : "mit150", 
+     "scale" : 2,
+     "url" : "mitmobile://mit150/" 
+   },
+
+   "items" : [ 
+      {
+         "id" : "mit150-welcome",
+         "title" : "Welcome",
+         "tint-color" : "#909090",
+         "url" : "mitmobile://mit150/about"
+      },
+      {
+         "id" : "mit150-corridor",
+         "title" : "The Corridor",
+         "subtitle" : "Read stories on the Corridor",
+         "tint-color" : "#ffff00",
+         "url" : "mitmobile://mit150/corridor"
+     },
+     {
+         "id" : "events-mit150",
+         "title" : "Events",
+         "subtitle" : "The Next Century Convocation April 10, 2011\nOther MIT150 events start January 7",
+         "tint-color" : "#00bfff",
+         "url" : "mitmobile://calendar/?source=MIT150"
+     }
+  ],
+
+  "more-items" : [  
+     {
+        "section-title" : "More at mit150.mit.edu",
+        "items" : [ 
+           {
+              "id" : "symposia",
+              "title" : "Symposia",
+              "subtitle" : "During the spring of 2011, a series of symposia designed and developed by MIT faculty will explore issues and topics of interest to MIT as community of scholars, students, and staff",
+              "url" : "http://mit150.mit.edu/symposia"
+           },
+           {
+              "id" : "open-house",
+              "title" : "Open House",
+              "subtitle" : "MIT has a long — albeit not contiguous — tradition of opening its doors to the public",
+              "url" : "http://mit150.mit.edu/events/open-house"
+           },
+           {
+              "id" : "alumni",
+              "title" : "Alumni",
+              "subtitle" : "Alumni: discover the many ways to participate in MIT150 celebrations, including submitting your MIT story to the Corridor.",
+              "url" : "http://mit150.mit.edu/alumni"
+           }
+        ]
+     },
+     {
+        "section-title" : "Links",
+        "items" : [ 
+           {
+              "id" : "arts-festival",
+              "title" : "FAST Arts Festival",
+              "subtitle" : "FAST will present an exciting, surprising variety of work, embracing past to future, performance to debate, and installations to the unclassifiable.",
+              "url" : "http://mit150.mit.edu/arts-festival"
+           },
+           {
+              "id" : "global-challenge",
+              "title" : "MIT Global Challenge",
+              "subtitle" : "The MIT Global Challenge invites the worldwide MIT community and their collaborators to participate in student-led innovation as public service",
+              "url" : "http://globalchallenge.mit.edu/"
+           },
+           {
+              "id" : "mit-museum",
+              "title" : "MIT Museum",
+              "subtitle" : "We’ve collected hundreds of ideas, stories and comments for the MIT 150 Exhibition, which opens at the MIT Museum in 2011. We want yours as well!",
+              "url" : "http://museum.mit.edu/150/"
+           },
+           {
+              "id" : "facebook",
+              "title" : "MIT150 Facebook",
+              "subtitle" : "MIT150 on Facebook",
+              "url" : "http://www.facebook.com/MIT150"
+           },
+           {
+              "id" : "twitter",
+              "title" : "MIT150 Twitter",
+              "subtitle" : "MIT150 on Twitter",
+              "url" : "http://twitter.com/MIT150"
+           }
+        ]
+     }
+  ]
+}

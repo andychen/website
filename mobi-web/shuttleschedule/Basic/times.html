@@ -1,0 +1,58 @@
+<?php
+$page->title("MIT Shuttle Schedule: {$routeInfo['name']} Shuttle")
+     ->header("Shuttle Schedule")
+     ->add_stylesheet("Basic/shuttletrack");
+
+$page->content_begin();
+?>
+	<div class="focal">
+		<h2><?=$routeInfo['name']?></h2>
+              
+                <p class="smallprint">
+                    <?=$routeInfo['description']?> <br />
+
+                    <? if($routeInfo['live']) { ?>
+                       Refreshed at <?=format_shuttle_time($routeInfo['lastupdate'])?> (<a href="<?=selfURL()?>">refresh</a>) using NextBus GPS <br />
+                    <? } else { ?>
+                       NextBus GPS is not available right now. Scheduled times are shown below.
+                    <? } ?>
+
+                </p>
+
+                <? if ($routeInfo['frequency'] > 0) { ?>
+                <p class="legend">Service every <?=$routeInfo['frequency']?> minutes.</p>
+                <? } ?>
+
+		<table cellpadding="0" cellspacing="0" border="0" class="schedule">
+			<tr>
+				<th>Stop 
+				<? if ($routeInfo['name'] != 'Boston All' && $routeInfo['name'] != 'Cambridge All') { ?>
+				<span class="fineprint">(<a href="#map">Map</a>)</span>
+				<? } ?>
+				</th>
+				<th>Time</th>
+			</tr>
+                        <? foreach($routeInfo['stops'] as $stop => $stopInfo) { ?>
+                            <? if(isset($stopInfo['upcoming']) && $stopInfo['upcoming']) { ?>
+  			       <tr class="current">
+				   <td><?=$page->img_tag('bus', 'gif', 'bus')?>&nbsp;<strong><?=$stopInfo['name']?></strong></td>
+				   <td><strong><?=format_shuttle_time($stopInfo['arrives'])?></strong></td>
+			       </tr>
+                            <? } else { ?>
+  			       <tr>
+				   <td>
+				     <?=$stopInfo['name']?></td>
+				   <td><?=format_shuttle_time($stopInfo['arrives'])?></td>
+			       </tr>
+                            <? } ?>
+                        <? } ?>
+		</table>
+
+		<a name="map"> </a>
+		<div class="image"><?=$image_tag?></div>
+
+	</div>
+<?
+$page->content_end();
+$page->nav_link("./", "Shuttle Schedule Home");
+?>

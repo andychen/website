@@ -1,0 +1,4 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone
+mit,MIT,http://web.mit.edu/parking,America/New_York,en,617-258-6510
+saferide,MIT Saferide,http://web.mit.edu/parking,America/New_York,en,617-258-6510
+charles-river,Charles River Transportation Management Association,http://www.charlesrivertma.org/program_ezride.htm,America/New_York,en,617-517-9740

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://mit150-p3.mit.edu/native_mobile_events" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>MIT 150 Events</title>
+    <link>https://mit150-p3.mit.edu/native_mobile_events</link>
+    <description></description>
+    <language>en</language>
+          <item>
+    <title>Test Old Event</title>
+    <link>https://mit150-p3.mit.edu/events/test-old-event</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Thu, 07/01/2010 - &lt;span class=&quot;date-display-start&quot;&gt;10:00&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;12:00&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Over Here        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Cras faucibus, justo vel accumsan aliquam, tellus dui fringilla quam, in condimentum augue lorem non tellus. Pellentesque id arcu non sem placerat iaculis. Curabitur posuere, pede vitae lacinia accumsan, enim nibh elementum orci, ut volutpat eros sapien nec sapien. Suspendisse neque arcu, ultrices commodo, pellentesque sit amet, ultricies ut, ipsum. Mauris et eros eget erat dapibus mollis. Mauris laoreet posuere odio. Nam ipsum ligula, ullamcorper eu, fringilla at, lacinia ut, augue. Nullam nunc.&lt;/p&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/general">General</category>
+ <pubDate>Wed, 18 Aug 2010 02:23:38 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">69 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>Test Event</title>
+    <link>https://mit150-p3.mit.edu/events/test-event</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Sun, 08/01/2010 - &lt;span class=&quot;date-display-start&quot;&gt;10:30&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;13:30&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Some MIT Location        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Cras faucibus, justo vel accumsan aliquam, tellus dui fringilla quam, in condimentum augue lorem non tellus. Pellentesque id arcu non sem placerat iaculis. Curabitur posuere, pede vitae lacinia accumsan, enim nibh elementum orci, ut volutpat eros sapien nec sapien. Suspendisse neque arcu, ultrices commodo, pellentesque sit amet, ultricies ut, ipsum. Mauris et eros eget erat dapibus mollis. Mauris laoreet posuere odio. Nam ipsum ligula, ullamcorper eu, fringilla at, lacinia ut, augue. Nullam nunc.&lt;/p&gt;
+&lt;fieldset class=&quot;fieldgroup group-images&quot;&gt;&lt;div class=&quot;field field-type-filefield field-field-image-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;img  class=&quot;imagefield imagefield-field_image_event&quot; width=&quot;212&quot; height=&quot;125&quot; alt=&quot;&quot; src=&quot;https://mit150-p3.mit.edu/sites/default/files/event/main/event-image.jpg?1282015485&quot; /&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/general">General</category>
+ <pubDate>Tue, 17 Aug 2010 03:24:45 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">40 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>Event Title</title>
+    <link>https://mit150-p3.mit.edu/events/event-title</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Mon, 08/16/2010 - &lt;span class=&quot;date-display-start&quot;&gt;16:00&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;18:00&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Some MIT Location        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Overview Text Here&lt;/p&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/academic">Academic</category>
+ <pubDate>Mon, 16 Aug 2010 20:31:15 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">38 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>Upcoming Museum Event</title>
+    <link>https://mit150-p3.mit.edu/museum/upcoming-museum-event</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Tue, 08/31/2010 - &lt;span class=&quot;date-display-start&quot;&gt;15:40&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;16:40&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    MIT Museum        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Test museum event to show block on exhibition pages.&amp;nbsp;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Cras faucibus, justo vel accumsan aliquam, tellus dui fringilla quam, in condimentum augue lorem non tellus. Pellentesque id arcu non sem placerat iaculis. Curabitur posuere, pede vitae lacinia accumsan, enim nibh elementum orci, ut volutpat eros sapien nec sapien. Suspendisse neque arcu, ultrices commodo, pellentesque sit amet, ultricies ut, ipsum. Mauris et eros eget erat dapibus mollis. Mauris laoreet posuere odio. Nam ipsum ligula, ullamcorper eu, fringilla at, lacinia ut, augue. Nullam nunc.&lt;/p&gt;
+&lt;p&gt;Sed et lectus in massa imperdiet tincidunt. Praesent neque tortor, sollicitudin non, euismod a, adipiscing a, est. Mauris diam metus, varius nec, faucibus at, faucibus sollicitudin, lectus. Nam posuere felis ac urna. Vestibulum tempor vestibulum urna. Nullam metus. Vivamus ac purus. Nullam interdum ullamcorper libero. Morbi vehicula imperdiet justo. Etiam mollis fringilla ante. Donec et dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Etiam mi libero, luctus nec, blandit ac, rutrum ac, lectus.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;fieldset class=&quot;fieldgroup group-images&quot;&gt;&lt;div class=&quot;field field-type-filefield field-field-image-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;img  class=&quot;imagefield imagefield-field_image_event&quot; width=&quot;212&quot; height=&quot;125&quot; alt=&quot;&quot; src=&quot;https://mit150-p3.mit.edu/sites/default/files/event/main/arts-event_0.jpg?1282094710&quot; /&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/museum">Museum</category>
+ <pubDate>Tue, 17 Aug 2010 19:42:12 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">63 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>Test Arts Event</title>
+    <link>https://mit150-p3.mit.edu/events/test-arts-event</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Mon, 10/25/2010 - &lt;span class=&quot;date-display-start&quot;&gt;20:00&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;23:30&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Some MIT Location        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Morbi consequat felis vitae enim. Nunc nec lacus. Vestibulum odio. Morbi egestas, urna et mollis bibendum, enim tellus posuere justo, eget elementum purus urna nec lacus. Nullam in nulla. Praesent ac lorem. Donec metus risus, accumsan ut, mollis non, porttitor eget, mi. Aliquam aliquet, tortor a elementum aliquam, erat odio sodales eros, suscipit blandit lectus dolor sit amet elit. In eros wisi, mollis vitae, tincidunt in, suscipit id, nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Phasellus ornare. Suspendisse potenti. Mauris convallis. Vestibulum nec mauris in augue porta mollis. Proin ut nunc. Mauris aliquam dui eget purus.&lt;/p&gt;
+&lt;fieldset class=&quot;fieldgroup group-images&quot;&gt;&lt;div class=&quot;field field-type-filefield field-field-image-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;img  class=&quot;imagefield imagefield-field_image_event&quot; width=&quot;212&quot; height=&quot;125&quot; alt=&quot;&quot; src=&quot;https://mit150-p3.mit.edu/sites/default/files/event/main/arts-event.jpg?1282015895&quot; /&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/fast-arts-festival">FAST Arts Festival</category>
+ <pubDate>Tue, 17 Aug 2010 03:31:35 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">41 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>TEST Register</title>
+    <link>https://mit150-p3.mit.edu/events/test-register</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Wed, 12/01/2010 - 09:00&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Location Name Goes Here        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;This event has a Registration URL, so the Register Now button should show up in the listing on the landing page and on the detail page.&lt;/p&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/general">General</category>
+ <pubDate>Sun, 17 Oct 2010 03:38:33 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">97 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>TEST Buy</title>
+    <link>https://mit150-p3.mit.edu/events/test-buy</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Wed, 12/01/2010 - 09:00&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Location Name Goes Here        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;This event has a Buy Tickets URL, so the Buy Tickets button should show up in the listing on the landing page and on the detail page.&lt;/p&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/general">General</category>
+ <pubDate>Sun, 17 Oct 2010 03:39:56 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">98 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>TEST No Buttons</title>
+    <link>https://mit150-p3.mit.edu/events/test-no-buttons</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Wed, 12/01/2010 - 09:00&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Location Name Goes Here        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;This event has no Registration URL or Buy Tickets URL, so no Register or Buy button should show up in the landing page listing or on the detail page.&amp;nbsp; Share button disabled on this event as well.&lt;/p&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/general">General</category>
+ <pubDate>Sun, 17 Oct 2010 03:41:25 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">99 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>TEST Both Buttons</title>
+    <link>https://mit150-p3.mit.edu/events/test-both-buttons</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Wed, 12/01/2010 - 09:00&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Location Name Goes Here        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;This event has both Registration URL and Tickets URL filled in to test what happens.&lt;/p&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/events">Events</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/general">General</category>
+ <pubDate>Sun, 17 Oct 2010 03:49:00 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">100 at https://mit150-p3.mit.edu</guid>
+  </item>
+  <item>
+    <title>Test Event Search Result</title>
+    <link>https://mit150-p3.mit.edu/symposia/test-event-search-result</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-date-event&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                      &lt;div class=&quot;field-label-inline-first&quot;&gt;
+              Event Date:&amp;nbsp;&lt;/div&gt;
+                    &lt;span class=&quot;date-display-start&quot;&gt;Mon, 12/06/2010 - 19:30&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;Wed, 12/08/2010 - 22:30&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-location-name&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Some location        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.regonline.com/mit150_econ_reg&quot;&gt;Registration&lt;/a&gt; now open.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/sites/default/files/pdf/MIT150 Symposia-economics-finance-program.pdf&quot;&gt;Download PDF version&lt;br /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Thursday, January 27, 2011&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;Opening remarks&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+8:45 am&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;John S. Reed &amp;rsquo;61 SM &amp;rsquo;65&lt;/strong&gt;&lt;br /&gt;
+Chairman of the MIT Corporation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;David Mindell&lt;/strong&gt;&lt;br /&gt;
+Chair, MIT150 Steering Committee&lt;br /&gt;
+Dibner Professor of the History of Engineering and Manufacturing&lt;br /&gt;
+and of Aeronautics and Astronautics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deborah K. Fitzgerald&lt;/strong&gt;&lt;br /&gt;
+Kenan Sahin Dean, MIT School of Humanities, Arts, and Social Sciences&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;The Evolution of Economic Science: Individual and Firm Behavior&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+9am&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Moderator&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;James M. Poterba&lt;/strong&gt;&lt;br /&gt;
+Mitsui Professor of Economics, MIT&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Panel&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;George Akerlof PhD &amp;rsquo;66&lt;/strong&gt;&lt;br /&gt;
+Koshland Professor of Economics, University of California, Berkeley&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avinash Dixit PhD &amp;rsquo;68&lt;/strong&gt;&lt;br /&gt;
+John J. F. Sherrerd &amp;rsquo;52 University Professor of Economics, Emeritus, Princeton University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Jerry Hausman&lt;/strong&gt;&lt;br /&gt;
+John and Jennie S. MacDonald Professor of Economics, MIT&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Oliver Williamson&amp;nbsp; &amp;rsquo;55&lt;/strong&gt;&lt;br /&gt;
+Edgar F. Kaiser Professor, Emeritus, Haas School of Business, University of California, Berkeley&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;10:30 am - Break&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;The Evolution of Economic Science: Macroeconomics, Growth, and Development&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+10:45 am&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Moderator&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;Daron Acemoglu&lt;/strong&gt;&lt;br /&gt;
+James Killian Professor of Economics, MIT&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Panel&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;Peter Diamond PhD &amp;rsquo;63&lt;/strong&gt;&lt;br /&gt;
+MIT Institute Professor&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Esther Duflo PhD &amp;rsquo;99&lt;/strong&gt;&lt;br /&gt;
+Abdul Latif Jameel Professor of Poverty Alleviation&lt;br /&gt;
+and Development Economics, MIT&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Robert Hall PhD &amp;rsquo;67&lt;/strong&gt;&lt;br /&gt;
+Robert and Carole McNeil Professor of Economics and Senior Fellow, Hoover Institution, Stanford University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Robert M. Solow&lt;/strong&gt;&lt;br /&gt;
+MIT Institute Professor, Emeritus&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;12:15 pm - Lunch&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;Economic Policy Challenges: Macroeconomics and Fiscal Policy&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+1:15 pm&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Moderator&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;Ricardo Caballero PhD &#039;88&lt;/strong&gt;&lt;br /&gt;
+Ford Professor of Economics and Department Head, MIT&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Panel&lt;/u&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Pedro Aspe PhD &amp;rsquo;78&lt;/strong&gt;&lt;br /&gt;
+Co-Chairman, Evercore Partners and Chairman and CEO, Protego&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Olivier Blanchard PhD &amp;rsquo;77&lt;/strong&gt;&lt;br /&gt;
+Class of 1941 Professor of Economics, MIT and Chief Economist, International Monetary Fund&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alan Blinder PhD &amp;rsquo;71&lt;/strong&gt;&lt;br /&gt;
+Gordon S. Rentschler Memorial Professor of Economics&lt;br /&gt;
+and Public Affairs, Princeton University &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paul Krugman PhD &amp;rsquo;77&lt;/strong&gt;&lt;br /&gt;
+Professor of Economics and International Affairs, Princeton University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;N. Gregory Mankiw PhD &amp;rsquo;84&lt;/strong&gt;&lt;br /&gt;
+Robert M. Beren Professor of Economics, Harvard University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Christina Romer PhD &amp;rsquo;85&lt;/strong&gt;&lt;br /&gt;
+Class of 1957 Garff B. Wilson Professor of Economics,&lt;br /&gt;
+University of California, Berkeley&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;3:15 pm - Break&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;Economic Policy Challenges: Microeconomics and Regulation&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+3:45 pm&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Moderator&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;Nancy L. Rose PhD &#039;85&lt;/strong&gt;&lt;br /&gt;
+Charles P. Kindleberger Professor of Applied Economics, MIT&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Panel&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;Dennis W. Carlton SM &amp;rsquo;74 PhD &amp;rsquo;75&lt;/strong&gt;&lt;br /&gt;
+Katherine Dusak Miller Professor of Economics,&lt;br /&gt;
+Booth School of Business, University of Chicago&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mark B. McClellan PhD &amp;rsquo;93&lt;/strong&gt;&lt;br /&gt;
+Leonard D. Schaeffer Chair in Health Policy Studies, Brookings Institution&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Richard Schmalensee &amp;rsquo;65 PhD &amp;rsquo;70&lt;/strong&gt;&lt;br /&gt;
+Howard W. Johnson Professor of Economics and Management, MIT&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hal Varian &amp;rsquo;69&lt;/strong&gt;&lt;br /&gt;
+Chief Economist, Google&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;5:15 pm - Adjourn&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Friday, January 28, 2011&lt;/h3&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;Opening remarks&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+8:45 am&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;David C. Schmittlein&lt;/strong&gt;&lt;br /&gt;
+John C. Head III Dean, MIT Sloan School of Management&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;The Evolution of Financial Technology&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+9-10:30 am&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Moderator&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;Andrew W. Lo&lt;/strong&gt;&lt;br /&gt;
+Harris &amp;amp; Harris Group Professor, MIT Sloan School of Management&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Panel&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;John C. Cox&lt;/strong&gt;&lt;br /&gt;
+Nomura Professor of Finance, MIT Sloan School of Management&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Robert C. Merton PhD &amp;rsquo;70&lt;/strong&gt;&lt;br /&gt;
+School of Management Distinguished Professor of Finance,&lt;br /&gt;
+MIT Sloan School of Management&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stewart C. Myers&lt;/strong&gt;&lt;br /&gt;
+Robert C. Merton (1970) Professor of Financial Economics,&lt;br /&gt;
+MIT Sloan School of Management &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stephen A. Ross&lt;/strong&gt;&lt;br /&gt;
+Franco Modigliani Professor of Financial Economics,&lt;br /&gt;
+MIT Sloan School of Management&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Myron S. Scholes&lt;/strong&gt;&lt;br /&gt;
+Frank E. Buck Professor of Finance, Emeritus,&lt;br /&gt;
+Graduate School of Business, Stanford University&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;10:30 am - Break&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;Finance in Action&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+10:45 am-12:15 pm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Moderator&lt;/u&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Stewart C. Myers&lt;/strong&gt;&lt;br /&gt;
+Robert C. Merton (1970) Professor of Financial Economics, MIT Sloan School of Management&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Panel&lt;/strong&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;strong&gt;Douglas T. Breeden &amp;rsquo;72&lt;/strong&gt;&lt;br /&gt;
+William W. Priest, Jr. Professor of Finance, Fuqua School of Business, Duke University&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Eugene Flood PhD &amp;rsquo;84&lt;/strong&gt;&lt;br /&gt;
+President and CEO, Smith Breeden Associates &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bennett W. Golub &amp;rsquo;72 SM &amp;rsquo;82 PhD &amp;rsquo;84 &lt;/strong&gt;&lt;br /&gt;
+Co-Founder and Chief Risk Officer, BlackRock &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Robert A. Jarrow PhD &amp;rsquo;79&lt;/strong&gt;&lt;br /&gt;
+Ronald P. and Susan E. Lynch Professor of Investment Management, The Johnson School, Cornell University&lt;br /&gt;
+&lt;strong&gt;&lt;br /&gt;
+Judy C. Lewent SM &amp;rsquo;72&lt;/strong&gt;&lt;br /&gt;
+Former Executive Vice President &amp;amp; Chief Financial Officer,&lt;br /&gt;
+Merck &amp;amp; Co., Inc.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;&lt;em&gt;Lunch and Keynote Address: The Future of Finance&lt;/em&gt;&lt;/span&gt;&lt;br /&gt;
+12:15-1:30 pm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Robert C. Merton PhD &amp;rsquo;70&lt;/strong&gt;&lt;br /&gt;
+School of Management Distinguished Professor of Finance,&lt;br /&gt;
+MIT Sloan School of Management&lt;/p&gt;
+</description>
+     <category domain="https://mit150-p3.mit.edu/category/channel/symposia">Symposia</category>
+ <category domain="https://mit150-p3.mit.edu/category/event-categories/general">General</category>
+ <pubDate>Tue, 07 Dec 2010 00:31:31 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">1939 at https://mit150-p3.mit.edu</guid>
+  </item>
+  </channel>
+</rss>

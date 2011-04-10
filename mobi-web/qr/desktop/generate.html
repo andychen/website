@@ -1,0 +1,40 @@
+<html>
+  <script>
+      function generateQRCode(form) {
+        var url = form.url.value;
+
+        var urlTypes = <?=$urlTypesJson?>;
+ 
+        for(var typeKey in urlTypes) {
+            for(var i=0; i < urlTypes[typeKey].length; i++) {
+                var prefix = urlTypes[typeKey][i].prefix;
+                if(startsWith(url, prefix)) {
+                    var redirectUrl = "http://m.mit.edu/qr/?" + typeKey + "=" + escape(suffix(url, prefix));
+                    var qrcodeImageDOM = document.getElementById('qr-code');
+                    qrcodeImageDOM.src = "qrcode.php?url=" + escape(redirectUrl);
+                    return false;
+                }
+            }  
+        }
+
+        alert('"' + url + '" is not a supported url');
+        return false;
+      }
+
+      function startsWith(target, prefix) {
+        return (target.indexOf(prefix) === 0);
+      }
+
+      function suffix(target, prefix) {
+        return target.substr(prefix.length);
+      }
+  </script>
+  <body>
+       <form onsubmit="return generateQRCode(this);">
+         URL: <input type="text" name="url" /> 
+         <input type="submit" />
+       </form>
+
+       <img id="qr-code" />
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<?php
+$page->title('Shuttles: ' . $routeInfo['name'])
+     ->navbar_image('shuttleschedule')
+     ->header('Route Info');
+
+$page->content_begin();
+?>
+	
+	<div class="focal">
+		<h2><?=$routeInfo['name']?></h2>
+		<p class="smallprint"><?=$routeInfo['description']?>
+		<? if($routeInfo['live']) { ?> Refreshed at <?=format_shuttle_time($routeInfo['lastupdate'])?> using NextBus GPS.
+		<? } else { ?> NextBus GPS is not available right now. Scheduled times are shown below.
+		<? } ?></p>
+    <? if ($routeInfo['frequency'] > 0) { ?>
+		<p class="smallprint">Service every <?=$routeInfo['frequency']?> minutes.</p>
+		<? } ?>
+		<table cellpadding="0" cellspacing="0" border="0" id="schedule">
+		<tr>
+		<th>Stop</th>
+		<th>Time</th>
+		</tr>
+                <? foreach($routeInfo['stops'] as $stop => $stopInfo) { ?>
+		<tr <? if(isset($stopInfo['upcoming']) && $stopInfo['upcoming']) { ?> class="current" <? } ?> >
+			<td>
+			<?=$stopInfo['name']?></td>
+			<td><?=format_shuttle_time($stopInfo['arrives'])?></td>
+		</tr>
+		<? } ?>
+		</table>
+		<div class="centered">
+		<?=$image_tag?>
+		</div>
+	</div>
+<? $page->content_end(); ?>

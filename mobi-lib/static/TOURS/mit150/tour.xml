@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour>
+    <introduction>
+         <title>Self-Guided Tour</title>
+         <description-top>
+                 <![CDATA[
+                   Welcome to MIT! This self-guided tour will introduce you to a broad range of interesting locations at MIT. The tour route covers about 1.25 miles (2 km) and should take you about 1 hour and 30 minutes to complete. You can start at any point on the route and end at any time.
+                 ]]>
+         </description-top>
+         <description-bottom auto-paragraph="false">
+                 <![CDATA[
+                    A few important notes:<br />
+                    <ul>
+                      <li>Please be mindful that videotaping and photography are prohibited inside MIT buildings with the exception of the replica of the MIT Seal in lobby 7.</li>
+
+                      <li>This tour includes some buildings which may be locked in the evenings, on weekends, and on certain Institute holidays. Residential dorms are closed to visitors and tourists at all times.</li> 
+
+                      <!-- 
+                        commented out until audio is actually available
+                       <li>Every screen in the tour, including walking directions, includes an audio voice-over, which you can access by tapping the button in the top right corner of the screen. </li> 
+                       -->
+
+                      <li>Many screens in the tour include optional Side Trips, which will guide you to additional points of interest off the main tour route.</li>
+
+                      <li>The <a href="http://web.mit.edu/infocenter/campustours.html">Information Center</a> (Building 7-121) offers student-guided tours of the campus, Monday through Friday at 11:00 am and 3:00 pm, excluding legal holidays. Admissions Information Sessions are held at 10:00 am and 2:00 pm.</li>
+
+                      <li>Even though many of the buildings at MIT are named, people usually refer to them by their assigned numbers instead. The numbering system might appear confusing at first, but there is a logical explanation as to how it runs. Buildings west of Massachusetts Avenue begin with a “W”, those north of the railroad tracks “N”, and those east of Ames Street “E”. The buildings east of the Great Dome and Killian Court (Building 10) have even numbers and those west of it have odd numbers. Thus you will find buildings 1 and 2 on opposite sides of Killian Courtyard. When you see a number on an office door, the first number refers to the building number and then following the hyphen is the room number.</li>
+                   </ul>
+                ]]>
+         </description-bottom>
+    </introduction>
+    <feedback>
+       <subject>Feedback for the self-guided tour</subject>
+    </feedback>
+    <links>
+        <link>
+           <title>MIT Information Center</title>
+           <url>http://web.mit.edu/infocenter/</url>
+        </link>
+        <link>
+           <title>MIT Admissions</title>
+           <url>http://web.mit.edu/admissions/</url>
+        </link>
+        <link>
+           <title>Find a place to eat</title>
+           <url>mitmobile://map/search?food</url>
+        </link>
+    </links>
+    <sites>
+      <site id="7">
+        <title>Lobby 7 (inside 77 Massachusetts Ave)</title>
+        <latitude>42.35923573173003</latitude>
+        <longitude>-71.09323641984071</longitude>
+        <content>
+            <content-text>
+               <![CDATA[
+MIT was first founded in 1861, but did not admit its first class of students until 1865 (after the Civil War). There is a memorial plaque for MIT's founder and first president, William Barton Rogers, a distinguished natural scientist on the far side of the lobby.  MIT's motto, <i>Mens et Manus</i> - or mind and hand - symbolizes the coupling of learning and application of knowledge to real-world problems. Rogers' view of a practical education included the rigorous study of science, technology, the social sciences, architecture, humanities, and the arts, and it continues to influence much of the activities at MIT.
+
+In August 1994, hackers replaced the institutional slogan engraved in stone below the 4th floor in lobby 7 with a slogan of their own. What once read: “Established for the Advancement and Development of Science its Application to Industry the Arts and Agriculture and Commerce” now said, “Established for the Advancement and Development of Science its Application to Industry the Arts Entertainment and Hacking.” This hack was so well executed that, upon investigation of reported "suspicious activity" campus police found nothing on their first two trips. After hours of puzzled searching, the hack was finally identified and recovered, and the hack was removed by repelling down into lobby 7.
+               ]]>
+            </content-text>
+
+             <side-trip title="Harvard Bridge" id="harvard-bridge">
+               <latitude>42.35953573173003</latitude>
+               <longitude>-71.09523641984071</longitude>
+               <content-text>
+                 <![CDATA[
+If you get a chance to cross the Harvard Bridge into Boston, you will notice markings painted across the sidewalk labeled as “smoots.” Oliver Smoot is an MIT alum, and was a member of LCA (Lambda Chi Alpha) fraternity. In 1958, the fraternity brothers decided to measure the length of the bridge connecting campus to their fraternity house, which is located in Boston. They used the shortest member of their fraternity, who was Oliver Smoot (5 feet 7 inches tall), to measure the bridge. They laid him continuously across the bridge, marking his length, and the bridge is approximately 364.4 smoots long (give or take an ear or two). This measurement is meant to indicate that units of measure can sometimes have slight inaccuracies. Oliver Smoot went on to become the co-chairman of the American National Standards Institute (very ironic!). And the new pledge members of the LCA fraternity repaint the smoot markings along the bridge at the beginning of every year. 
+
+Within a two- mile radius of the Institute are the Museums of Science and Fine Arts, the New England Conservatory of Music, Symphony Hall, the New England Aquarium, and the Boston Public Library.  MIT is one of 52 schools located within the Boston area or 100 in Greater Boston. Over 250,000 students attend college within Boston and Cambridge alone. 
+]]>
+               </content-text>
+             </side-trip>
+
+        </content>
+        <exit-directions>
+          <title>Directions from Lobby 7 to Stratton Building (W20)</title> 
+          <content>
+             <content-text>
+                 <![CDATA[
+Leave Building 7 and cross Massachusetts Avenue. Central and Harvard Squares are to your right, and the Harvard Bridge leading into Boston is on the left. 
+            ]]>
+          </content-text>
+
+             <content-text>
+                 <![CDATA[
+To your right (between Massachusetts Avenue and the Stratton Student Center) is a sculpture called “The Alchemist” – a major sculptural work by Spanish contemporary artist, Jaume Plensa. The sculpture is on loan to MIT for one year in celebration of the Institute’s 150th anniversary. The sculpture consists of mathematical symbols in the shape of a human form. It was commissioned specifically for the sesquicentennial celebration; an alumnus has underwritten the work.
+
+Walk straight down the sidewalk and cross the paved courtyard. The Stratton Building will be on your right. Enter through the glass doors.
+                 ]]>
+             </content-text>
+          </content>
+          <path>
+                42.35923573173003,-71.09323641984071
+                42.35889444444445,-71.09427777777778
+                42.35903888888889,-71.09461111111111
+          </path>
+          <zoom>17</zoom>
+        </exit-directions>
+      </site>
+      
+      <site id="W20">
+        <title>Student Center (W20)</title>
+        <latitude>42.35903888888889</latitude>
+        <longitude>-71.09461111111111</longitude>
+        <content>
+            <content-text>
+               <![CDATA[
+Enter the Stratton Student Center (architect Eduardo Catalano – 1965). On the first floor is LaVerde’s, the school convenience store and supermarket, places to eat like Anna’s Taqueria, Dunkin Donuts, and the Cambridge Grill, 2 banks (Bank of America and the MIT Credit Union), Copy Tech, and a branch of the COOP (the school store) that sells books and many of MIT's signature items. The main and larger location of the MIT COOP is located in Kendall Square at 3 Cambridge Street.
+
+The basement of the student center has a US Post Office, Card Services, hair salon, and other offices. The second floor contains Lobdell Dining Hall and other places to eat. The third floor contains function rooms, and the fourth floor houses many of the student activities. There are over 450 student groups on campus, and many students and staff will create new groups that aren’t already established at MIT. There is also a Science Fiction Library on the fourth floor that has a very thorough collection of sci-fi books. In addition, the fourth floor has studios for the Student Art Association, which offers a variety of art classes. The fifth floor houses an Athena cluster, a reading room, and other administrative offices. An Athena cluster is a computer lab available to students, including printers free for student use. This networked-system of Unix and Linux-based workstation is available as a quickstation as well, all throughout campus. 
+               ]]>
+            </content-text>
+        </content>
+        <exit-directions>
+          <title>Directions from the Student Center (W20) to the Zesiger Center (W35)</title>
+          <content>
+             <content-text>
+                 <![CDATA[
+Leave the Student Center, turn right and walk ahead. Passing Kresge Auditorium on your left and walking straight ahead you will see the Zesiger Sports and Fitness Center, and Johnson Athletics Center. Feel free to enter the first floor of the Zesiger Center (Building W35).
+                 ]]> 
+             </content-text>
+
+
+          </content>
+          <path>
+                        42.35903888888889,-71.09461111111111
+                        42.35870264465711,-71.09473510618933
+                        42.35830139495225,-71.09593008284874
+          </path>
+          <zoom>17</zoom>
+        </exit-directions>
+      </site>
+
+      <site id="W35">
+        <title>Zesiger Center and Athletics at MIT</title>
+        <latitude>42.35830139495225</latitude>
+        <longitude>-71.09593008284874</longitude>
+        <content>
+          <content-text>
+            <![CDATA[
+The Zesiger Center opened in September 2002, named for Albert Zesiger '53 and his wife, who are members of the MIT Corporation. Throughout the building there are 6 international scale squash courts, a multi-activity court, and a number of basketball courts and other facilities. Once you are in the lobby, above you is a year round 200 meter synthetic track and multi-purpose field. During the winter in the lobby there is an indoor hockey rink that offers ice skating for students as well. When walking through, you will see an Olympic size (50 meter) pool to your right, and a smaller instructional pool right next to it.
+
+MIT has an extraordinary varsity sport intercollegiate program with 33 varsity teams. MIT competes mostly against New England colleges and Ivy League schools.  MIT has 35 club sport teams with over 800 participants.  The intramural program offers 18 sports with over 4,000 students, faculty, alumni and spouses participating.  Each student must earn 8 points through physical education courses and complete the swim requirement as part of the General Institute Requirement. MIT offers several physical education courses, which include skiing, hiking, and even dance classes. There is also an unofficial recognition of students who have completed specific classes (including pistol, sailing, and fencing)—this is called a pirate’s license, although there is no actual license! All undergraduate students are also required to take a swim test before they graduate. They must swim 100 yards continuously and most students complete this on registration day of their freshmen year.
+
+When you step back outside the Zesiger Center and turn to your right, you will notice two fields. Briggs Field is to the left and Steinbrenner Field is to the right. These playing fields are used by different teams and the students. Beyond Briggs Field is a white bubble that houses indoor tennis courts. If you turn to your left you will be facing dorm row, and along dorm row are the du Pont outdoor tennis courts, 11 courts available for general recreation and intramural competitions.
+            ]]>
+          </content-text>
+        </content>
+        
+        <exit-directions>
+          <title>Directions from the Zesiger Center to Kresge Auditorium (W16)</title>
+          <content>
+             <content-text>
+             <![CDATA[
+Leave the Zesiger Center, turn left and walk back towards the Student Center. You will see Kresge Auditorium (Building W16) on the right. 
+             ]]> 
+             </content-text>
+          </content>
+          <path>
+                        42.35830139495225,-71.09593008284874
+                        42.3583076020755,-71.09568706255072
+                        42.35851586875496,-71.09507861847517
+                        42.35835850874651,-71.09490648252304
+          </path>
+          <zoom>17</zoom>
+        </exit-directions>
+      </site>
+      
+      
+      <site id="W16">
+        <title>Kresge Auditorium (W16)</title>
+        <latitude>42.35835850874651</latitude>
+        <longitude>-71.09490648252304</longitude>
+        <content>
+          <content-text>
+            <![CDATA[
+Among Kresge’s interesting features is its outer shell that is 1/8 of a sphere that floats free from the rest of the auditorium. Three deeply sunk abutments support the shell, while the auditorium’s interior is built up from the ground.  The building was designed by Eero Saarinen with initial occupancy in 1955. The main auditorium seats 1,200 people, and the Little Theatre seats 212 people. Campus groups such as the Shakespeare Ensemble, Dance Troupe, and our multiple a cappella groups, put on performances here. Other events are held in the auditorium; for example, when President Obama visited MIT, he addressed the campus from Kresge Auditorium. 
+            ]]>
+          </content-text>
+
+             <side-trip title="The Dorms" id="dorms">
+               <latitude>42.35855850874651</latitude>
+               <longitude>-71.09790648252304</longitude>
+               <content-text>
+                 <![CDATA[
+There are 11 dorms on campus, and the majority of them are located here on West Campus. The 2 buildings to your left make up McCormick hall. McCormick is the only single gender dorm on campus (all female). 
+ 
+Moving to the right of McCormick, the brick building is Baker House. The building's architect, Alvar Aalto, designed the building (built in 1949) so that nearly 90% of the rooms have a river view. The serpentine shape provides more rooms on the same lot than would a rectangular plan, and it allows nearly all rooms to face up or down the Charles River. Glassed-in exterior stairs are cantilevered from the building's north wall, permitting a freer scheme of corridors that widen into lounges, and reinforce the serpentine plan form. 
+ 
+The next dorm beside Baker House is Burton-Conner. Burton-Conner has suite-style living setups, so that each suite has individual rooms, a common bathroom, living space, and kitchen. The dorm is popular for students who like to cook. Further down dorm row are MacGregor (the tower) next to Burton-Conner, which is majorly made up of single rooms; New House, which allows students to live in cultural houses such as German and French houses (you do not need to be of that background to live there!); and Next House. The dorms (except for MacGregor) are generally made up of single, double, and triple rooms. 
+ 
+At the undergraduate level, MIT is essentially a residential university. Of the total undergraduate student body of approximately 4,200, about 3,000 single men and women live in the 11 Institute Houses on the campus and 36 MIT-affiliated living groups including fraternities, sororities, and other independent living groups. All unmarried first-year students must live in one of the Institute's residence halls – except those who commute from home.
+                 ]]>
+               </content-text>
+             </side-trip>
+
+             <side-trip title="The Chapel" id="W15">
+               <latitude>42.35875850874651</latitude>
+               <longitude>-71.09890648252304</longitude>
+               <content-text>
+                 <![CDATA[
+The architect for the MIT Chapel was also Eero Saarinen, and the chapel was built in 1955. The Chapel bell tower and bell were designed by sculptor Theodore Roszak. Sunlight striking the moat around the windowless Chapel is reflected upward into the arches at the base and appears in sparkling dots of light on the interior walls. Behind the altar is a sculpture by Harry Bertoia. This sculpture is used to help scatter light throughout the room. There is also a Religious Center (Building W11) at the corner of Amherst Street and Massachusetts Avenue, located behind the chapel. This center is used by the many religious organizations on campus. There are currently 30 active and long-standing student religious organizations. 
+
+You can enter the Chapel unless it is being used for a service or function. 
+                 ]]>
+               </content-text>
+             </side-trip>
+        </content>
+
+        <exit-directions>
+          <title>Directions from Kresge Auditorium to Infinite Corridor</title>
+          <content>
+             <content-text>
+             <![CDATA[
+				Walk back toward Massachusetts Avenue. On the way, you'll pass the MIT Chapel, the round brick building across the lawn from Kresge Auditorium.  
+
+				When you reach Massachusetts Avenue, cross the street and walk up the prominent staircase through colonnaded entrance and enter Lobby 7.
+					
+				Cross the lobby and enter Infinite Corridor.
+                ]]> 
+             </content-text>
+          </content>
+          <path>
+                        42.35835850874651,-71.09490648252304
+                        42.35858340259433,-71.094843748036
+                        42.35932066675424,-71.0926341704237
+          </path>
+          <zoom>17</zoom>
+        </exit-directions>
+      </site>
+      
+      <site id="7i">
+        <title>Infinite Corridor</title>
+        <latitude>42.35932066675424</latitude>
+        <longitude>-71.0926341704237</longitude>
+        <content>
+          <content-text>
+            <![CDATA[
+The hallway is almost 1/6 of a mile long. Twice a year, the sun shines the length of the corridor (weather permitting) and people gather to watch. Many of the buildings on campus are connected. There is also an underground tunnel that connects even more of the buildings around campus. MIT is said to have about 7 miles of connecting corridors and buildings.
+            ]]>
+          </content-text>
+        </content>
+        
+        <exit-directions>
+          <title>Directions from Infinite Corridor to 2.007 Display</title>
+          <content>
+             <content-text>
+             	<![CDATA[
+As you walk down Infinite Corridor, look for the small sign that reads "Building 3 / Killian Court". At that intersection, turn to walk into the Building 3 wing. 
+
+<div class="photo"><img src="http://__SERVER_DOMAIN__/api/tours/image.php?tourId=mit150&photoId=turn-toward-3" width="160" height="100" /><br/>Turn from Infinite Corridor into Building 3</div>
+
+As you walk down the Building 3 hallway, check out the 2.007 display at the junction of Building 3 and the Infinite Corridor; it will be towards your right.              
+				]]>
+             </content-text>
+          </content>
+          <path>
+          		42.35932066675424,-71.0926341704237
+				42.35915942334027,-71.09253644970126
+          </path>
+          <zoom>18</zoom>
+        </exit-directions>
+      </site>
+      
+      <site id="3">
+        <title>2.007 Display</title>
+        <latitude>42.35915942334027</latitude>
+        <longitude>-71.09253644970126</longitude>
+        <content>
+          <content-text>
+            <![CDATA[
+Not only are all the buildings numbered, but all the courses and classes at MIT are numbered as well. For example, you might hear a student walking through the hall say “I have 5.111 at 11 am in 26-100.” In this case, 26-100 is the room number, and 5.111 translates to Introductory Chemistry. Course 5 is Chemistry, and in the case of 2.007, course 2 is mechanical engineering. During the course of 2.007, students learn design theory and methodologies. At the end of the term, students are given an opportunity to demonstrate their knowledge by creating and operating a robot in the final competition. The class builds critical problem solving skills for engineers and is a great example of MIT’s motto “<i>mens et manus</i>” or “mind and hand.” During the final competition, there are representatives from nearby companies looking to recruit students for jobs and internships, and it’s a great time for students to show off their skills!
+            ]]>
+          </content-text>
+        </content>
+        
+        <exit-directions>
+          <title>Directions from 2.007 to Killian Court</title>
+          <content>
+             <content-text>
+             <![CDATA[
+Continue walking to the end of Building 3. Exit into Killian Court through the double doors to your left at the very end of the hallway.
+
+Please do not stand in the lobby by Room 3-174 (end of hall before exiting) to talk to your group. Mechanical engineering has said it is disruptive to their office. Please stay away from their door. 
+             ]]>
+             </content-text>
+          </content>
+          <path>
+          		42.35915942334027,-71.09253644970126
+          		42.35848825988866,-71.09219732283674
+          		42.35868611111111,-71.09143611111111
+          </path>
+          <zoom>17</zoom>
+        </exit-directions>
+      </site>
+
+      <site id="killian-court">
+        <title>Killian Court</title>
+        <latitude>42.35868611111111</latitude>
+        <longitude>-71.09143611111111</longitude>
+        <content>
+          <content-text>
+            <![CDATA[
+In 1974, the Corporation of MIT voted to name the “Great Court” for James Killian, Jr '26, former President and later Chairman of the Corporation. Killian Court looks onto the Great Dome as well as the skyline of Boston and the Charles River. The courtyard is symmetric, and the buildings east of Killian Court (Building 10) have even numbers and those west of it have odd numbers. Building 1 and 2 are on opposite sides of the courtyard. Killian Court is also the location of MIT’s graduation every year. It is a popular spot for students to read and play Frisbee or soccer during warm weather. 
+
+The Great Dome is patterned after Rome’s Pantheon. Inside the dome is the Barker Engineering Library. Several interconnected limestone buildings flow from it, emphasizing the symmetry and unity of the design. Conceived in the classic tradition by architect William Bosworth (Class of 1889), this was the grouping into which MIT moved in 1916 from its original quarters on Boylston Street.
+
+The Great Dome has been the site of many hacks at MIT. A “hack” is defined as an inventive practical joke that students play on the campus. Hacking is a major part of the tradition and culture of the campus. The “Campus Police Car on the Great Dome” is one of MIT’s most celebrated and widely appreciated hacks. The hack began with the creation of a mock police car, fashioned by attaching the outer metal shell of an old Chevy to segments of wooden framing. Like all great hackers, the anonymous pranksters crafted the car with a fine eye for detail.  A dummy police officer sat in the front seat with a toy gun, cup of coffee, and box of donuts. Fuzzy dice hung from the mirror, the license plate read IHTFP (which, among other things, means “I have truly found paradise”), and π appeared in place of a squad car number. The hackers also slipped in a parking violation reading “No permit for this location” beneath the windshield wiper. Some other hacks with the Great Dome involve placing a fire engine on top of the dome for the anniversary of September 11th in 2006. The dome was also made to look the Star Wars robot R2D2, and a giant ring was placed on top of the dome for the Lord of the Rings movie premiere. Hacks have also been done in other parts of the campus. 
+            ]]>
+          </content-text>
+
+             <side-trip title="Ellen Swallow Richards" id="ellen-swallow-richards">
+               <latitude>42.35828611111111</latitude>
+               <longitude>-71.09343611111111</longitude>
+               <content-text> 
+                <![CDATA[
+Richards was MIT’s first woman graduate and member of the teach staff. She studied chemistry at MIT, but was particularly interested in drinking water purity. Her work in nutrition and sanitation of food, water, and air, helped establish the modern field of ecology. Women have attended MIT since 1871. MIT is home to a wide scope of women’s resources, including Society of Women Engineers (SWE) and Women’s Technology Program (WTP).                  ]]>
+               </content-text>
+             </side-trip>
+        </content>
+        
+        <exit-directions>
+          <title>Directions from Killian Court to Hayden Memorial Library (Bldg 14)</title>
+          <content>
+             <content-text>
+             	<![CDATA[
+Walk directly across Killian Court from the Building 3 doorway where you entered, and enter Building 2 through the nearest doorway facing you.
+
+<div class="photo"><img src="http://__SERVER_DOMAIN__/api/tours/image.php?tourId=mit150&photoId=2-entrance" width="160" height="100" /><br/>Entrance to Building 2</div>
+
+You'll enter the building through the Ellen Swallow Richards Lobby, where you'll see a bronze tablet honoring Ellen Swallow Richards (Class of 1873).
+
+Walk through Building 2 to the Hayden Memorial Library Building (Building 14). Check out the bulletin boards down the hall that mention all the different humanities fields of study that are offered at MIT, along with their faculty. 
+
+After you pass through that hall, you’ll see the Hayden Memorial Library Building down the hall at your right. 
+				]]>
+             </content-text>
+
+          </content>
+          <path>
+          		42.35868611111111,-71.09143611111111
+          		42.35925012678632,-71.08967070433368
+          </path>
+          <zoom>17</zoom>
+        </exit-directions>
+      </site>
+
+      <site id="14">
+        <title>Hayden Memorial Library</title>
+        <latitude>42.35925012678632</latitude>
+        <longitude>-71.08967070433368</longitude>
+        <content>
+          <content-text>
+            <![CDATA[ 
+The first floor contains the science collection, and the second floor contains the humanities collection. You may see the 24/7 study room is located inside the doors of the Science library to accommodate students around the clock.
+
+MIT provides a substantial and varied program in the humanities, arts, and social sciences that forms an essential part of the education of every undergraduate. Students can participate in and attend over 500 music, theatre, creative writing, and visual arts events, or pursue a full major in humanities, double major, or a joint major in science or engineering. Each student is required to take a certain number of humanities classes, and must concentrate in a specific humanities subject as well. A humanities concentration usually consists of 3 or 4 classes in that field, and the most popular concentration at MIT is music. If there is a subject that a student wishes to take but MIT does not offer, full-time MIT students may cross register and take subjects for credit at Harvard University, Wellesley College, MassArt, and School of the Museum of Fine Arts without paying additional tuition. 
+            ]]>
+          </content-text>          
+
+          <side-trip title="Lewis Library" id="14l">
+            <latitude>42.35905012678632</latitude>
+            <longitude>-71.08867070433368</longitude>
+            <content-text>
+                 <![CDATA[
+Lewis Library offers access to a number of different musical books and collections. There is also equipment to digitize analog recordings. The score of a two-part canon, composed for the library by MIT music and Pulitzer Prize winner John Harbison, adorns the mezzanine’s glass panels. 
+                 ]]>
+            </content-text>
+          </side-trip>
+           <side-trip title="Walker Memorial" id="50">
+             <latitude>42.35975012678632</latitude>
+             <longitude>-71.08867070433368</longitude>
+             <content-text>
+                 <![CDATA[
+Walker Memorial is one of the earlier buildings on the Cambridge campus.  It houses WMBR (Walker Memorial Basement Radio), MIT's FM radio station, along with other student activities. The building also houses squash courts, the Muddy Charles Pub, an indoor bouldering wall, and the Graduate Student Council Office.
+                 ]]>
+            </content-text>
+          </side-trip>
+          <side-trip title="East Campus" id="62">
+            <latitude>42.35945012678632</latitude>
+            <longitude>-71.087967070433368</longitude>
+            <content-text>
+                 <![CDATA[
+The East Campus undergraduate dorm is formed from six "houses", each named after an alumna/alumnus of MIT: Munroe, Hayden, Wood, Walcott, Bemis, and Goodale. The dorm celebrated its 80th anniversary in 2005. Because of the dorm's age, students are allowed to paint and alter rooms and floor common spaces up to the limits of what the Cambridge fire code will allow. East Campus is also one of the four dorms at MIT to allow cats (Senior House, Random Hall, and Bexley are the others). The members of the dorm build a wooden roller coaster in their courtyard each year to attract freshmen to their campus.                 
+				]]>
+            </content-text>
+          </side-trip>   
+          
+          <side-trip title="Senior House" id="E2">
+            <latitude>42.36025012678632</latitude>
+            <longitude>-71.09067070433368</longitude>
+            <content-text>
+                 <![CDATA[
+Senior House is the oldest dorm on campus. Despite its name, it is not only for senior students!
+                 ]]>
+            </content-text>
+          </side-trip>  
+        </content>
+
+        <exit-directions>
+          <title>Directions from Hayden Memorial Library to Green Building (Bldg 54)</title>
+          <content>
+             <content-text>
+             	<![CDATA[
+Continue down the hall past Hayden Library. You will pass the Institute Archives on your left, and at the end of the hall on your right you will see Lewis Music Library. There are five major subject libraries at MIT, and these include Rotch Library of Architecture and Planning (located in building 7) and Dewey Library of Management and Social Sciences.
+
+Walk out the doors to your left and proceed ahead into McDermott Court.
+
+<div class="photo"><img src="http://__SERVER_DOMAIN__/api/tours/image.php?tourId=mit150&photoId=bigsail" width="160" height="100" /><br/>The Big Sail</div>
+
+The sculpture to your right is called The Big Sail (La Grande Voile). The sculpture has a time capsule buried right beneath it, containing four dozen items, including a plastic beaver and MIT school newspapers. There was no date set for when the time capsule should be opened. To your right are the Walker Memorial (Bldg 50), East Campus Dormitories, and Senior House. 
+
+The tall building in front of you is the Green Building (Bldg 54); the Chemistry Building (Bldg 18) is to its left.
+  				]]>
+             </content-text>
+		  </content>
+          <path>
+          		42.35930612678632,-71.08967070433368
+                42.35946914669761,-71.08916240950266
+          		42.36037076239053,-71.0892689350036
+          </path>
+          <zoom>17</zoom>
+        </exit-directions>
+      </site>
+
+      <site id="54">
+        <title>Green Building (Bldg 54)</title>
+        <latitude>42.36037076239053</latitude>
+        <longitude>-71.0892689350036</longitude>
+        <content>
+          <content-text>
+            <![CDATA[ 
+This building houses the EAPS Department (Earth, Atmospheric, and Planetary Sciences) and the Center for Meteorology and Physical Oceanography. The building used to be the tallest building in Cambridge. At the time of design, Cambridge had an 18-story maximum building height restriction in effect. I.M. Pei proposed a taller building, breaking MIT tradition of horizontal expansion. MIT was the first to break the Cambridge skyline barriers, and I.M. Pei designed the building somewhat on stilts, so that the building is officially only 18 stories high. There is a large lecture hall on that first floor, which students will usually have at least one class in while they are at MIT. The large panel of windows of the building have been used to spell out “GO SOX” when the Boston baseball team plays across the river.
+
+From here, you may wish to take a brief walk to visit the Sloan School of Management.
+  				]]>
+             </content-text>
+             
+          <side-trip title="Alfred Sloan School of Management" id="E62">
+            <latitude>42.36067076239053</latitude>
+            <longitude>-71.0872689350036</longitude>
+            <content-text>
+                 <![CDATA[
+Though it cannot be seen from this location, the MIT’s Sloan School of Management is one of the world’s leading business schools—conducting cutting-edge research and providing management education to top students from more than 60 countries.
+
+Sloan just opened the “greenest” building on campus this year. The $142 million dollar building overlooks the Charles River and houses 200 offices, classrooms, and group study space.  “E62 is now the “greenest” building on the entire MIT campus. More than 90 percent of the debris from a structure torn down to make way for it was diverted away from landfills. Major elements of the garden that had been in front of the demolished building, including trees weighing up to 17 tons, were relocated to a new park-like area on campus. Among its many sustainable features the building has active chilled beams for cooling, automatic window shades in offices, a green roof, and an irrigation system connected to a central weather station for minimization of watering. E62 will be formally dedicated in May as part of MIT's 150th anniversary celebration in 2011.” 
+(courtesy of Sloan website) 
+
+Photo: Ian Lamont (ilamont.blogspot.com)
+                 ]]>
+            </content-text>
+          </side-trip>  
+
+             <side-trip title="Wiesner Building and Media Lab" id="E15">
+               <latitude>42.36057076239053</latitude>
+               <longitude>-71.0882689350036</longitude>
+               <content-text>
+                 <![CDATA[
+“The Media Lab has expanded into a new, six-floor structure with approximately 163,000 square feet of laboratory, office, and meeting space designed by the Tokyo-based architectural firm of Maki and Associates. Together with the existing Wiesner Building (designed by MIT alumnus I. M. Pei), the complex will serve as a showplace for new concepts in design, communications systems, and collaborative research. The goal is to ignite a new energy and connectivity within the two-building complex, and then extend this energy beyond our walls—to our sponsors and to the world at large.” The Media and Visual Arts center attempts to combine creative design and robotics to design new things. 
+                 ]]>
+               </content-text>
+             </side-trip>            
+             <side-trip title="David H. Koch Institute for Integrative Cancer Research (Bldg 76) " id="76">
+               <latitude>42.36087076239053</latitude>
+               <longitude>-71.0922689350036</longitude>
+               <content-text>
+                 <![CDATA[
+The new Koch building features 180,000 square-feet of  state-of-the-art lab and workspace. The floor plans are specially designed to foster interaction and collaboration among biologists and engineers – both in terms of dedicated lab space and in the common areas, where informal talks will lead to new collaborations and spontaneous information-sharing.” (courtesy of Koch website). The area in and around Kendall Square is a major location for many biotech companies and laboratories. 
+                 ]]>
+               </content-text>
+             </side-trip>
+             <side-trip title="Brain and Cognitive Sciences and McGovern Buildings (Bldg 46)" id="46">
+               <latitude>42.36057076239053</latitude>
+               <longitude>-71.0862689350036</longitude>
+               <content-text>
+                 <![CDATA[
+The BCS department was founded forty years ago, "with a cross-disciplinary, multi-level approach to studying both the brain and the mind...The human brain is immensely complex...we pursue every level of inquiry-from molecules to cells to circuits to the mystery of the mind itself. As we study its diseases and disorders, its development and daily feats, like vision, speech, movement and memory, we also integrate methods and insights from every area of brain research. Already known for remarkable contributions to the field, our faculty members continually stretch the limits of knowledge, and bring the same passion to educating our exceptional students." (courtesy of BCS website)
+
+"The long-term mission of the McGovern Institute is to understand the human brain in health and disease. Led by a team of world-renowned, multi-disciplinary neuroscientists, the Institute conducts integrated research in three broad themes - perception, cognition, and action - using systems and computational neuroscience, brain imaging and cognitive neuroscience, and molecular biology and genetics...Neuroscience as a distinct discipline is only a few decades old, but it is already addressing deep questions about human existence that were until recently the province of philosophers alone." The institute studies a range of debilitating diseases such as developmental disorders including autism, psychiatric diseases including bipolar disorder, and neurodegenerative diseases including Alzheimer's and Parkinson's disease. (courtesy of McGovern website)                 ]]>
+               </content-text>
+             </side-trip>
+        </content>
+        <exit-directions>
+          <title>Directions from the Green Building to the Stata Center</title>
+          <content>
+             <content-text>
+             	<![CDATA[
+Walk under (or around) Building 54 towards the junction of Buildings 56 and 66. Towards your right and across the street is a cluster of buildings, include the Biology Building (Bldg 68), the Wiesner Building (E15) and Media Lab, and the MIT Medical Center (E23). The main location of the MIT COOP is located in that direction, in Kendall Square. 
+
+             	<div class="photo"><img src="http://__SERVER_DOMAIN__/api/tours/image.php?tourId=mit150&photoId=56-66-entrance" width="160" height="100" /><br/>Bldg 66/56 entrance</div>
+Enter the glass corridor between Buildings 66 and 56 and exit out the other side to walk to the Stata Center. Towards your right, you will see the new cancer research center on campus, the Koch Building, and its courtyard. 
+
+             	<div class="photo"><img src="http://__SERVER_DOMAIN__/api/tours/image.php?tourId=mit150&photoId=stata-entrance" width="160" height="100"/><br/>Entrance to Stata</div>
+Walk towards the Stata Center, past the outside amphitheater and around the corner to your left. Enter the building by the main door at the corner of the street. 
+  				]]>
+             </content-text>
+                          
+          </content>
+          <path>
+          		42.36037076239053,-71.0892689350036
+          		42.36083226064939,-71.08945637414115
+          		42.36209251262467,-71.0898715435393
+          		42.36211069815351,-71.09005407686959
+          		42.3616987829589,-71.09041981911957
+
+          </path>
+          <zoom>16</zoom>
+        </exit-directions>
+      </site>
+
+      <site id="32">
+        <title>The Ray and Maria Stata Center (Bldg 32)</title>
+        <latitude>42.3616987829589</latitude>
+        <longitude>-71.09041981911957</longitude>
+        <content>
+          <content-text>
+            <![CDATA[
+The Stata Center opened in May 2004 and is designed by architect Frank O. Gehry. It is a 730,000 square foot complex that was designed as a functional yet flexible work environment. Stata houses the Laboratory of Computer Science and the Artificial Intelligence Laboratory. When you enter to your right, you will see the Forbes Family Café, which is open 5 days a week for breakfast, lunch, and dinner. The lobby contains a large lecture hall, two tiered classrooms, and two flat classrooms. Across from the café you will see a bulletin board containing information about hacking at MIT, including a list of hacking “rules” and pictures. Stata houses a collection of hacking memorabilia, including ‘Ferdi’ the Hilltop Steakhouse cow, the fire-hose drinking fountain, and the infamous campus police car. Feel free to step inside a lecture hall or classroom to look around, but make sure it is not already in use. 
+            ]]>
+          </content-text>
+          	<side-trip title="Dry Creek Bridge" id="32d">
+                  <latitude>42.3613987829589</latitude>
+                  <longitude>-71.09341981911957</longitude>
+                  <content-text>
+                    <![CDATA[
+The Stata Center’s storm water management system utilizes the dry creek bed. The creek collects rainwater from adjoining roofs and retains it in a series of underground collection cells. This water is filtered through plantings and crushed stone, and then is either sent to a holding tank inside the building to be used for flushing toilets, or the city’s main drainage system. The pumps are powered by solar panels. 
+                    ]]>
+                  </content-text>
+          	</side-trip>
+        </content>
+        <exit-directions>
+          <title>From Stata Center to Lobby 7</title>
+          <content>
+             <content-text>
+             	<![CDATA[
+Turn the corner around Room 32-123. To your left you will see a small Fitness Center. Use the doors right by this center to leave the building. 
+
+<div class="photo"><img src="http://__SERVER_DOMAIN__/api/tours/image.php?tourId=mit150&photoId=stata-exit" width="160" height="100" /><br/>Exit from Stata</div>
+
+Walk across the courtyard toward the metal bridge over the dry creek bed. Cross over the bridge and enter Buildings 56 and 16.
+
+<div class="photo"><img src="http://__SERVER_DOMAIN__/api/tours/image.php?tourId=mit150&photoId=drycreek" width="160" height="100" /><br/>Dry creek bridge</div>
+
+As you enter the building, to your left you will see one of the aforementioned Athena clusters. 
+
+Turn to your right and walk to the end of the hall. Turn left to walk up the steps (following the sign to Building 8) and turn back down the main corridor. 
+
+As you walk back down the corridor towards Lobby 7, you will see Materials Science laboratories around you. Most of these are teaching labs for students in course 3 (materials science). Before you come to Lobby 10, you will pass the Public Service Center on your left and the International Students Office on your right. 
+  				]]>
+			</content-text>
+
+          </content>
+          <path>
+				42.3616987829589,-71.09041981911957
+				42.36115721379758,-71.09060414557881
+				42.36085085337542,-71.09045307974168
+				42.36060865080191,-71.09018830363844
+				42.36038238539081,-71.09090040153779
+				42.3600307859019,-71.090741813642
+                42.35923573173003,-71.09323641984071
+          </path>
+          <zoom>15</zoom>
+        </exit-directions>
+      </site>
+    
+
+      
+   </sites>
+   <start-locations>
+      <header>
+         <![CDATA[
+              Are you visiting, new to MIT, or just unsure how to get around the campus? Use one of the following suggested starting points for the tour.
+         ]]>
+      </header>
+      <locations>
+         <location id="amherst-alley">
+            <title><![CDATA[ If you're near the residential housing along the river ]]></title>
+            <content>
+               <![CDATA[
+                   Walk down Amherst Alley toward the center of campus. Look for the domed building with glass walls. That's Kresge Auditorium (Building W16), which is on the tour. Walk up to it and tap here to begin the tour.
+               ]]>
+            </content>
+            <latitude>42.35705343606803</latitude>
+            <longitude>-71.09561920166016</longitude>
+            <start-site>W16</start-site>
+         </location>
+         <location id="building-7">
+            <title><![CDATA[ If you're near the Visitors Center in Building 7 (the landmark building at 77 Mass Ave.) ]]></title>
+            <content>
+               <![CDATA[
+                  Easy! Building 7 is on the tour route. Tap here to begin the tour here.
+               ]]>
+            </content>
+            <latitude>42.359194010026435</latitude>
+            <longitude>-71.09332323074341</longitude>
+            <start-site>7</start-site>
+         </location>
+         <location id="kendall-t">
+            <title><![CDATA[ If you're arriving by T (subway or bus) ]]></title>
+            <content>
+               <![CDATA[
+Take the Red Line subway (or the 64, 68, 85, or CT2 bus) to the Kendall Square station. Once at street level, orient yourself by facing the MIT Coop. Turn left and walk 2 blocks west down Main Street. Turn left onto Vassar Street up to Stata Center &ndash; the modern building on your left that's covered in curved steel panels. When you've arrived, tap here to begin the tour.
+               ]]>
+            </content>
+            <latitude>42.362539501795474</latitude>
+            <longitude>-71.08609199523926</longitude>
+            <start-site>32</start-site>
+         </location>
+      </locations>
+   </start-locations>
+</tour>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="http://mit-150-p3.druplets.net/open-house/41/rss.xml" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>MIT 150 Open House Feed</title>
+    <link>http://mit-150-p3.druplets.net/open-house/41/rss.xml</link>
+    <description></description>
+    <language>en</language>
+          <item>
+    <title>MIT Museum Inside Out</title>
+    <link>http://mit-150-p3.druplets.net/open-house/activity/mit-museum-inside-out</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-activity-time&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Time:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Sat, 04/30/2011 - &lt;span class=&quot;date-display-start&quot;&gt;11:00&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;16:00&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    N52        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location-desc&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location Description:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    MIT Museum        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-sponsor&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Sponsor:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Museum        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-format&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Format:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    demonstration        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    exhibit        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    games        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    hands-on activity        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    open facility to visitors        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    tour        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-number-integer field-field-activity-family-friendly&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Family Friendly:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Child and Family Friendly        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Free admission all day at the MIT Museum, as it turns itself inside out for the Institute&#039;s Open House Day (and the first day of the Cambridge Science Festival!). Go behind the scenes of the Museum and explore unique artifacts from MIT&#039;s history, as well as innovations in art, science and technology in Cambridge and beyond. The day&#039;s programs will feature tours, hands-on activities, and a chance for visitors of all ages to see and chat with the people behind the Museum&#039;s MIT 150 exhibition.&lt;/p&gt;
+</description>
+     <category domain="http://mit-150-p3.druplets.net/category/channel/open-house">Open House</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/air-and-space-flight/aeronautics-and-astronautics">Aeronautics and Astronautics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/alumni">Alumni</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/architecture">Architecture</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/arts">Arts</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/bioengineering">Bioengineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/entrepreneurship-and-management/business-and-management">Business and Management</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/chemical-engineering">Chemical Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/energy-and-sustainability/energy-and-environment">Energy and the Environment</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/biological-sciences">Biological Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/chemistry">Chemistry</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/civil-and-environmental-engineering">Civil and Environmental Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/economics">Economics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/entrepreneurship-and-management/entrepreneurship">Entrepreneurship</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/media-arts-and-sciences">Media Arts and Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/cognitive-science">Cognitive Science</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/earth-atmospheric-and-planetary-sciences">Earth, Atmospheric and Planetary Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/electrical-engineering-and-computer-sc">Electrical Engineering and Computer Science</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/humanities">Humanities</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/urban-studies-and-planning">Urban Studies and Planning</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/education">Education</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/international-and-global">International and Global</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/life-sciences">Life Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/mathematics">Mathematics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/innovation-and-invention">Innovation and Invention</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/linguistics">Linguistics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/medical-sciences">Medical Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/physics">Physics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/materials-science-and-engineering">Materials Science and Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/neuroscience">Neuroscience</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/social-sciences">Social Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/mechanical-engineering">Mechanical Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/nanoscience-and-nanotechnology">Nanoscience and Nanotechnology</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/student-life">Student Life</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/oceanographic-engineering">Oceanographic Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/robotics-and-artificial-intelligence">Robotics and Artificial Intelligence</category>
+ <pubDate>Sun, 27 Mar 2011 01:18:26 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">2377 at http://mit-150-p3.druplets.net</guid>
+  </item>
+  <item>
+    <title>Celebrating Discovery at MIT: An Undergraduate Research Poster Session</title>
+    <link>http://mit-150-p3.druplets.net/open-house/activity/celebrating-discovery-mit-undergraduate-research-poster-session</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-activity-time&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Time:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Sat, 04/30/2011 - &lt;span class=&quot;date-display-start&quot;&gt;14:00&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;16:00&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    W33        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location-desc&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location Description:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Building W33, Rockwell Cage        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-sponsor&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Sponsor:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Undergraduate Advising and Academic Programming        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-format&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Format:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    poster session        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-number-integer field-field-activity-max-participants&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Max Participants:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    100        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-number-integer field-field-activity-family-friendly&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Family Friendly:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Child and Family Friendly        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Since 1969, the Undergraduate Research Opportunities Program, commonly known as &amp;ldquo;UROP,&amp;rdquo; has been facilitating research collaborations between faculty and students, across all disciplines. Today, UROP is considered MIT&amp;rsquo;s &amp;ldquo;signature&amp;rdquo; program, and more than 85% of undergraduates participate.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mit-150-p3.druplets.net/open-house/activity/celebrating-discovery-mit-undergraduate-research-poster-session&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+     <category domain="http://mit-150-p3.druplets.net/category/channel/open-house">Open House</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/air-and-space-flight/aeronautics-and-astronautics">Aeronautics and Astronautics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/architecture">Architecture</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/arts">Arts</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/astronomy">Astronomy</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/bioengineering">Bioengineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/entrepreneurship-and-management/business-and-management">Business and Management</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/chemical-engineering">Chemical Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/energy-and-sustainability/energy-and-environment">Energy and the Environment</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/biological-sciences">Biological Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/chemistry">Chemistry</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/civil-and-environmental-engineering">Civil and Environmental Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/economics">Economics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/media-arts-and-sciences">Media Arts and Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/cognitive-science">Cognitive Science</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/earth-atmospheric-and-planetary-sciences">Earth, Atmospheric and Planetary Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/electrical-engineering-and-computer-sc">Electrical Engineering and Computer Science</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/humanities">Humanities</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/education">Education</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/international-and-global">International and Global</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/life-sciences">Life Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/mathematics">Mathematics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/innovation-and-invention">Innovation and Invention</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/linguistics">Linguistics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/physics">Physics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/materials-science-and-engineering">Materials Science and Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/neuroscience">Neuroscience</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/social-sciences">Social Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/mechanical-engineering">Mechanical Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/robotics-and-artificial-intelligence">Robotics and Artificial Intelligence</category>
+ <pubDate>Wed, 30 Mar 2011 15:27:58 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">2396 at http://mit-150-p3.druplets.net</guid>
+  </item>
+  <item>
+    <title>What Is Engineering Systems Division ESD?</title>
+    <link>http://mit-150-p3.druplets.net/open-house/activity/what-engineering-systems-division-esd</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-activity-time&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Time:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Sat, 04/30/2011 - &lt;span class=&quot;date-display-start&quot;&gt;11:00&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;16:00&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    E40        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location-desc&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location Description:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Building E40 - Room 298        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-sponsor&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Sponsor:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Engineering Systems Division        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-format&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Format:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    exhibit        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    video        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-number-integer field-field-activity-family-friendly&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Family Friendly:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Child and Family Friendly        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Watch a video about the MIT Engineering Systems Division, talk to students and staff, and take some ESD materials. There also will be videos about and info tables for the Leaders for Global Operations program and the MIT Portugal Program.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+     <category domain="http://mit-150-p3.druplets.net/category/channel/open-house">Open House</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/air-and-space-flight/aeronautics-and-astronautics">Aeronautics and Astronautics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/bioengineering">Bioengineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/entrepreneurship-and-management/business-and-management">Business and Management</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/civil-and-environmental-engineering">Civil and Environmental Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/economics">Economics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/entrepreneurship-and-management/entrepreneurship">Entrepreneurship</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/electrical-engineering-and-computer-sc">Electrical Engineering and Computer Science</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/humanities">Humanities</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/urban-studies-and-planning">Urban Studies and Planning</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/education">Education</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/international-and-global">International and Global</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/innovation-and-invention">Innovation and Invention</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/materials-science-and-engineering">Materials Science and Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/mechanical-engineering">Mechanical Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/transportation">Transportation</category>
+ <pubDate>Wed, 30 Mar 2011 15:40:56 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">2404 at http://mit-150-p3.druplets.net</guid>
+  </item>
+  <item>
+    <title>Test Activity</title>
+    <link>http://mit-150-p3.druplets.net/open-house/activity/test-activity-0</link>
+    <description>&lt;div class=&quot;field field-type-datestamp field-field-activity-time&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Time:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;Sat, 04/30/2011 - &lt;span class=&quot;date-display-start&quot;&gt;11:00&lt;/span&gt;&lt;span class=&quot;date-display-separator&quot;&gt; - &lt;/span&gt;&lt;span class=&quot;date-display-end&quot;&gt;16:00&lt;/span&gt;&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    P7        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-location-desc&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Location Description:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Somewhere        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-sponsor&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Sponsor:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Somebody        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-activity-format&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Format:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    booths        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    children&#039;s activity        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    class        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    demonstration        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    exhibit        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    games        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    hands-on activity        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    lecture        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    open facility to visitors        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    panel discussion        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    poster session        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    seminar        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    social media        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    tour        &lt;/div&gt;
+              &lt;div class=&quot;field-item odd&quot;&gt;
+                    video        &lt;/div&gt;
+              &lt;div class=&quot;field-item even&quot;&gt;
+                    workshop        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-number-integer field-field-activity-family-friendly&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Family Friendly:&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    Child and Family Friendly        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This is a test.&lt;/p&gt;
+</description>
+     <category domain="http://mit-150-p3.druplets.net/category/channel/open-house">Open House</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/air-and-space-flight/aeronautics-and-astronautics">Aeronautics and Astronautics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/alumni">Alumni</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/architecture">Architecture</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/arts">Arts</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/astronomy">Astronomy</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/bioengineering">Bioengineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/entrepreneurship-and-management/business-and-management">Business and Management</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/chemical-engineering">Chemical Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/energy-and-sustainability/energy-and-environment">Energy and the Environment</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/athletics-and-recreation">Athletics and Recreation</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/biological-sciences">Biological Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/chemistry">Chemistry</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/civil-and-environmental-engineering">Civil and Environmental Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/economics">Economics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/entrepreneurship-and-management/entrepreneurship">Entrepreneurship</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/media-arts-and-sciences">Media Arts and Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/cognitive-science">Cognitive Science</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/community-service">Community Service</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/earth-atmospheric-and-planetary-sciences">Earth, Atmospheric and Planetary Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/electrical-engineering-and-computer-sc">Electrical Engineering and Computer Science</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/humanities">Humanities</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/architecture-planning-and-design/urban-studies-and-planning">Urban Studies and Planning</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/education">Education</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/information-technology">Information Technology</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/international-and-global">International and Global</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/life-sciences">Life Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/mathematics">Mathematics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/innovation-and-invention">Innovation and Invention</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/libraries">Libraries</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/linguistics">Linguistics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/medical-sciences">Medical Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/sciences/physics">Physics</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/materials-science-and-engineering">Materials Science and Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/mit-museum">MIT Museum</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/life-sciences-and-biotechnology/neuroscience">Neuroscience</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/arts-humanities-and-social-sciences/social-sciences">Social Sciences</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/mechanical-engineering">Mechanical Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/religious-activities">Religious Activities</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/nanoscience-and-nanotechnology">Nanoscience and Nanotechnology</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/mit-learning-life-and-culture/student-life">Student Life</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/nuclear-science-and-engineering">Nuclear Science and Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/oceanographic-engineering">Oceanographic Engineering</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/robotics-and-artificial-intelligence">Robotics and Artificial Intelligence</category>
+ <category domain="http://mit-150-p3.druplets.net/category/activity-themes/engineering-technology-and-invention/transportation">Transportation</category>
+ <pubDate>Thu, 31 Mar 2011 16:24:05 +0000</pubDate>
+ <dc:creator>administrator</dc:creator>
+ <guid isPermaLink="false">2409 at http://mit-150-p3.druplets.net</guid>
+  </item>
+  </channel>
+</rss>
