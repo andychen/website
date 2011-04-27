@@ -3,7 +3,7 @@
 $docRoot = getenv("DOCUMENT_ROOT");
 
 /*
- * the prodction error handler has a pretty html page dispalying a brief error message
+ * the production error handler has a pretty html page dispalying a brief error message
  * it also emails detailed information to the developer email address
  */
 define("USE_PRODUCTION_ERROR_HANDLER", True);

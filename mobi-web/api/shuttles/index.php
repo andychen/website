@@ -11,6 +11,7 @@ require_once LIBDIR."TransitDataParser.php";
 $data = Array();
 $command = $_REQUEST['command'];
 
+$allstops = array("mass84_d","massbeac","comm487","commsher","comm478","beacmass","mass77","edge","kendsq_d","amhewads","medilab","kres","burtho","tangwest","w92ames","simmhl","vassmass","statct","massnewb","beac528","bays111","bays155","stpaul259","manc58","here32","nw10","nw30","nw86","nw61","mainwinds","porthamp","camb638","camb5th","6thcharl","elotmain","amesbld66","mitmed","kendsq","wadse40","mccrmk","newho","ww15","brookchest","putmag","rivfair","rivpleas","rivfrank","sydgreen","paci70","whou");
 
 //error_log("API COMMAND $command...");
 
@@ -18,22 +19,45 @@ $command = $_REQUEST['command'];
 switch ($command) {
   case 'locInfo':
     $view = new TransitDataView();
-
-    $lat = $_REQUEST['lat'];
-    $lon = $_REQUEST['lon'];
-    $time = time();
+		$lat_phone = $_REQUEST['lat'];
+    $lon_phone = $_REQUEST['lon'];
+		$locations = Array();
+    //$routesInfo = $view->getRoutes();
+		
+		//Sort stops by distance away from phone... and note if a stop has any routes running.
+		foreach ($allstops as $key => $stopId){
+		  $stopInfo = $view->getStopInfo($stopId);
+			$lat_stop = $stopInfo["coordinates"]["lat"];
+			$lon_stop = $stopInfo["coordinates"]["lon"];
+			$isAnyRunning = false;
+			$routes = array();
+			foreach ($stopInfo["routes"] as $key => $info){
+				//Probably non-ideal place to adjust the route title.
+			  $info["name"] = str_ireplace("Saferide ", "", $info["name"]);
+				$stopInfo["routes"][$key] = $info;
+			  if ($info["running"]) $isAnyRunning = true;
+			}
+			$stopInfo["isAnyRunning"] = $isAnyRunning;
+			$stopInfo["stopID"] = $stopId;
+			$locations[strval($view->getDistance($lat_phone, $lon_phone, $lat_stop, $lon_stop))] = $stopInfo;
+		}
+		ksort($locations);
     
-    $locInfo = $view->getLocInfo($lat, $lon);
-    $stops = array();
-    if (isset($stopInfo['routes'])) {
-      foreach ($stopInfo['routes'] as $routeID => $stopTimes) {
-        $stops[] = formatStopInfo($routeID, $stopID, $stopInfo, $stopTimes);
+		//Return stop info for 5 closest stops that have > 0 shuttles running.
+		foreach ($locations as $key => $info)
+		{
+  		$stop = array();
+  		$stops = array();
+      if ($info["isAnyRunning"]) {
+        foreach ($info['routes'] as $routeID => $stopTimes) {
+          $stops[] = formatStopInfo($routeID, $info["stopID"], $info, $stopTimes);
+        }
+        $stop['stops'] = $stops;
+				$data[] = $stop;
       }
-      $data['stops'] = $stops;
-      $data['now'] = $time;
-    } else {
-      $data['error'] = "could not perform $command";
-    }
+			if (count($data) >= 5) break;
+		}
+
     break;
 
   case 'stopInfo':
@@ -197,7 +221,10 @@ function formatStopForRouteInfo($stopID, $stopInfo) {
 function formatStopInfo($routeID, $stopID, $stopInfo, $stopTimes) {
   $stop = array(
     'id'          => "$stopID",
+    'stop_title'  => $stopInfo['name'],
     'route_id'    => "$routeID",
+		'route_title' => $stopInfo['routes'][$routeID]['name'],
+    'lat'         => $stopInfo['coordinates']['lat'],
     'lat'         => $stopInfo['coordinates']['lat'],
     'lon'         => $stopInfo['coordinates']['lon'],
     'next'        => (int)$stopTimes['arrives'],

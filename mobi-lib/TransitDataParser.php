@@ -212,6 +212,10 @@ class TransitDataView {
     return $stopInfo;
   }
   
+  public function getLocInfo($lat, $lon) {
+				 	
+	}
+
   public function getStopInfo($stopID) {
     $stopInfo = array();
     $cacheName = "stopInfo.$stopID";
@@ -595,6 +599,19 @@ class TransitDataView {
     }
     return $parsers;
   }
+	
+	public function getDistance($latitude1, $longitude1, $latitude2, $longitude2, $unit = 'Mi') {
+  	$theta = $longitude1 - $longitude2;
+  	$distance = (sin(deg2rad($latitude1)) * sin(deg2rad($latitude2))) + (cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * cos(deg2rad($theta)));
+  	$distance = acos($distance);
+  	$distance = rad2deg($distance);
+  	$distance = $distance * 60 * 1.1515;
+  	switch($unit) {
+  	  case 'Mi': break;
+  		case 'Km' : $distance = $distance * 1.609344;
+  	}
+  	return (round($distance,3));
+	}
 }
 
 
@@ -807,37 +824,6 @@ abstract class TransitDataParser {
     
     $this->applyStopInfoOverrides($stopID, $stopInfo);
     
-    return $stopInfo;
-  }
-  
-  public function getLocInfo($lat, $lon) {
-    if (!isset($this->stops[$stopID])) {
-      error_log(__FUNCTION__."(): Warning no such stop '$stopID'");
-      return array();
-    }
-  
-    $now = TransitTime::getCurrentTime();
-
-    $routePredictions = array();
-    foreach ($this->routes as $routeID => $route) {
-      if ($route->routeContainsStop($stopID)) {
-        $this->updatePredictionData($route->getID());
-        
-        $routePredictions[$routeID] = $route->getPredictionsForStop($stopID, $now);
-        $routePredictions[$routeID]['name'] = $this->getRoute($routeID)->getName();
-        $routePredictions[$routeID]['live'] = $this->isLive();
-      }
-    }
-    
-    $stopInfo = array(
-      'name'        => $this->stops[$stopID]->getName(),
-      'description' => $this->stops[$stopID]->getDescription(),
-      'coordinates' => $this->stops[$stopID]->getCoordinates(),
-      'routes'      => $routePredictions,
-    );
-    
-    $this->applyStopInfoOverrides($stopID, $stopInfo);
-
     return $stopInfo;
   }
 
