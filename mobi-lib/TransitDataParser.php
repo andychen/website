@@ -810,6 +810,37 @@ abstract class TransitDataParser {
     return $stopInfo;
   }
   
+  public function getLocInfo($lat, $lon) {
+    if (!isset($this->stops[$stopID])) {
+      error_log(__FUNCTION__."(): Warning no such stop '$stopID'");
+      return array();
+    }
+  
+    $now = TransitTime::getCurrentTime();
+
+    $routePredictions = array();
+    foreach ($this->routes as $routeID => $route) {
+      if ($route->routeContainsStop($stopID)) {
+        $this->updatePredictionData($route->getID());
+        
+        $routePredictions[$routeID] = $route->getPredictionsForStop($stopID, $now);
+        $routePredictions[$routeID]['name'] = $this->getRoute($routeID)->getName();
+        $routePredictions[$routeID]['live'] = $this->isLive();
+      }
+    }
+    
+    $stopInfo = array(
+      'name'        => $this->stops[$stopID]->getName(),
+      'description' => $this->stops[$stopID]->getDescription(),
+      'coordinates' => $this->stops[$stopID]->getCoordinates(),
+      'routes'      => $routePredictions,
+    );
+    
+    $this->applyStopInfoOverrides($stopID, $stopInfo);
+
+    return $stopInfo;
+  }
+
   public function getStopInfo($stopID) {
     if (!isset($this->stops[$stopID])) {
       error_log(__FUNCTION__."(): Warning no such stop '$stopID'");

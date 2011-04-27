@@ -16,6 +16,26 @@ $command = $_REQUEST['command'];
 
 
 switch ($command) {
+  case 'locInfo':
+    $view = new TransitDataView();
+
+    $lat = $_REQUEST['lat'];
+    $lon = $_REQUEST['lon'];
+    $time = time();
+    
+    $locInfo = $view->getLocInfo($lat, $lon);
+    $stops = array();
+    if (isset($stopInfo['routes'])) {
+      foreach ($stopInfo['routes'] as $routeID => $stopTimes) {
+        $stops[] = formatStopInfo($routeID, $stopID, $stopInfo, $stopTimes);
+      }
+      $data['stops'] = $stops;
+      $data['now'] = $time;
+    } else {
+      $data['error'] = "could not perform $command";
+    }
+    break;
+
   case 'stopInfo':
     $view = new TransitDataView();
 
