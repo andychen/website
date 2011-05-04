@@ -11,18 +11,22 @@ require_once LIBDIR."TransitDataParser.php";
 $data = Array();
 $command = $_REQUEST['command'];
 
-$allstops = array("mass84_d","massbeac","comm487","commsher","comm478","beacmass","mass77","edge","kendsq_d","amhewads","medilab","kres","burtho","tangwest","w92ames","simmhl","vassmass","statct","massnewb","beac528","bays111","bays155","stpaul259","manc58","here32","nw10","nw30","nw86","nw61","mainwinds","porthamp","camb638","camb5th","6thcharl","elotmain","amesbld66","mitmed","kendsq","wadse40","mccrmk","newho","ww15","brookchest","putmag","rivfair","rivpleas","rivfrank","sydgreen","paci70","whou");
+//$allstops = array("mass84_d","massbeac","comm487","commsher","comm478","beacmass","mass77","edge","kendsq_d","amhewads","medilab","kres","burtho","tangwest","w92ames","simmhl","vassmass","statct","massnewb","beac528","bays111","bays155","stpaul259","manc58","here32","nw10","nw30","nw86","nw61","mainwinds","porthamp","camb638","camb5th","6thcharl","elotmain","amesbld66","mitmed","kendsq","wadse40","mccrmk","newho","ww15","brookchest","putmag","rivfair","rivpleas","rivfrank","sydgreen","paci70","whou");
 
 //error_log("API COMMAND $command...");
 
 
 switch ($command) {
   case 'locInfo':
-		echo "Starting";
     $view = new TransitDataView();
 		$lat_phone = $_REQUEST['lat'];
     $lon_phone = $_REQUEST['lon'];
-		$locations = Array();
+    
+		$data["closestStops"] = $view->getClosestStopInfo(5, $lat_phone, $lon_phone); 
+
+    
+/*		
+
 		
 		//Sort stops by distance away from phone... and note if a stop has any routes running.
 		foreach ($allstops as $key => $stopId){
@@ -59,6 +63,7 @@ switch ($command) {
 			if (count($closestStops) >= 5) break;
 		}
 		$data["closestStops"] = $closestStops;
+    */
     break;
 
   case 'stopInfo':
