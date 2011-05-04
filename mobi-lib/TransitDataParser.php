@@ -178,49 +178,36 @@ class TransitDataView {
 		$routes = $this->getRoutes();
 		foreach ($routes as $routeID => $routeInfo) {
 //      echo "route info" . json_encode($routeInfo);
-      if (!$routeInfo["running"]){
+      if ($routeInfo["running"]){
         foreach ($routeInfo["stops"] as $stopID => $stopInfo) {
           if (!array_key_exists($stopID, $locations)) {
-            $locations[$stopID] = $this->getDistance($lat_phone, $lon_phone, $stopInfo["coordinates"]["lat"], $stopInfo["coordinates"]["lon"]);            
+            $locations[strval($this->getDistance($lat_phone, $lon_phone, $stopInfo["coordinates"]["lat"], $stopInfo["coordinates"]["lon"]))] = array('stopID' =>$stopID, 'routeID' => $routeID);            
           }
         }
       }
     }
       
-    asort($locations);
+    ksort($locations);
     
-    echo "locations".json_encode($locations);
-    
-    $stopIDs = array();
-		foreach ($locations as $stopID => $value)
+    $routeAndStopIDs = array();
+    $stopCount = 0;
+		foreach ($locations as $key => $value)
 		{
-      $stopIDs[] = $stopID;
-      if (count($stopIDs) >= $num) break;
+      if (!array_key_exists($value['routeID'], $routeAndStopIDs)) {
+        $routeAndStopIDs[$value['routeID']] = array($value['stopID']);        
+      }
+      else {
+        $routeAndStopIDs[$value['routeID']][] = $value['stopID'];
+      }
+      $stopCount = $stopCount + 1;
+      if ($stopCount >= $num) break;
     }
-    echo "stopids".json_encode($stopIDs);
-    $parser = $this->parserForRoute("mass84_d");
-    echo "PARSER: ".json_encode($parser);
-    if ($parser['live']) {
-      echo "LIVE::";
-      $closestStops = $parser['static']->getClosestStopInfo($stopIDs);
-    }
-    echo "closest".json_encode($closestStops);
-/*
-    if ($parser['static']) {
-      $staticStopInfo = $parser['static']->getClosestStopInfo($stopIDs);
-    }
-*/
 
-/*  
-		$stop = array();
-		$stops = array();
-    foreach ($info['routes'] as $routeID => $stopTimes) {
-      $stops[] = formatStopInfo($routeID, $info["stopID"], $info, $stopTimes);
+    $parser = $this->parsers[0];
+    if ($parser['live']) {
+      $closestStops = $parser['live']->getClosestStopInfo($routeAndStopIDs);
     }
-    $stop['stops'] = $stops;
-    $closestStops[] = $stop;
-		}
-*/
+//    echo "closest".json_encode($closestStops);
     
     return $closestStops;
   }
@@ -633,7 +620,7 @@ class TransitDataView {
   
   private function parserForRoute($routeID) {
     foreach ($this->parsers as $parser) {
-      echo "parsers: ".json_encode($parser);
+      echo "parsers: ".count($this->parsers).get_class($parser['live']).get_class($parser['static']);
       if ($parser['live'] && $parser['live']->hasRoute($routeID)) {
         return $parser;
       }
@@ -857,38 +844,37 @@ abstract class TransitDataParser {
   // Query functions
   // 
 
-  public function getClosestStopInfo($stopIDs) {
-    if (!isset($this->stops[$stopID])) {
-      error_log(__FUNCTION__."(): Warning no such stop '$stopID'");
-      return array();
-    }
-    $this->updatePredictionDataByStop($stopIDs);
+  public function getClosestStopInfo($routeAndStopIDs) {
+
+    $this->updatePredictionDataByStop($routeAndStopIDs);
 
     $now = TransitTime::getCurrentTime();
     $stopInfos = array();
     
-    foreach ($stopIDs as $key => $stopID) {
-      $routePredictions = array();
-      foreach ($this->routes as $routeID => $route) {
-        if ($route->routeContainsStop($stopID)) {
-  //        $this->updatePredictionData($route->getID());      
-          $routePredictions[$routeID] = $route->getPredictionsForStop($stopID, $now);
-          $routePredictions[$routeID]['name'] = $this->getRoute($routeID)->getName();
-          $routePredictions[$routeID]['live'] = $this->isLive();
+    foreach ($routeAndStopIDs as $routeID => $stopIDs) {
+      foreach ($stopIDs as $key => $stopID) {
+        $routePredictions = array();
+        foreach ($this->routes as $routeID => $route) {
+          if ($route->routeContainsStop($stopID)) {
+    //        $this->updatePredictionData($route->getID());      
+            $routePredictions[$routeID] = $route->getPredictionsForStop($stopID, $now);
+            $routePredictions[$routeID]['name'] = $this->getRoute($routeID)->getName();
+            $routePredictions[$routeID]['live'] = $this->isLive();
+          }
         }
+        
+        $stopInfo = array(
+          'id'          => $stopID,
+          'name'        => $this->stops[$stopID]->getName(),
+          'description' => $this->stops[$stopID]->getDescription(),
+          'coordinates' => $this->stops[$stopID]->getCoordinates(),
+          'routes'      => $routePredictions,
+        );
+        
+        $this->applyStopInfoOverrides($stopID, $stopInfo);
+        $stopInfos[] = $stopInfo;
       }
-      
-      $stopInfo = array(
-        'name'        => $this->stops[$stopID]->getName(),
-        'description' => $this->stops[$stopID]->getDescription(),
-        'coordinates' => $this->stops[$stopID]->getCoordinates(),
-        'routes'      => $routePredictions,
-      );
-      
-      $this->applyStopInfoOverrides($stopID, $stopInfo);
-      $stopInfos[] = $stopInfo;
     }
-
     return $stopInfos;
   }
 

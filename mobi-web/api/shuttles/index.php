@@ -22,48 +22,22 @@ switch ($command) {
 		$lat_phone = $_REQUEST['lat'];
     $lon_phone = $_REQUEST['lon'];
     
-		$data["closestStops"] = $view->getClosestStopInfo(5, $lat_phone, $lon_phone); 
-
+    $fClosestStops = array();
     
-/*		
-
-		
-		//Sort stops by distance away from phone... and note if a stop has any routes running.
-		foreach ($allstops as $key => $stopId){
-		  $stopInfo = $view->getStopInfo($stopId);
-			$lat_stop = $stopInfo["coordinates"]["lat"];
-			$lon_stop = $stopInfo["coordinates"]["lon"];
-			$isAnyRunning = false;
-			$routes = array();
-			foreach ($stopInfo["routes"] as $key => $info){
-				//Probably non-ideal place to adjust the route title.
-			  $info["name"] = str_ireplace("Saferide ", "", $info["name"]);
-				$stopInfo["routes"][$key] = $info;
-			  if ($info["running"]) $isAnyRunning = true;
-			}
-			$stopInfo["isAnyRunning"] = $isAnyRunning;
-			$stopInfo["stopID"] = $stopId;
-			$locations[strval($view->getDistance($lat_phone, $lon_phone, $lat_stop, $lon_stop))] = $stopInfo;
-		}
-		ksort($locations);
-    
-		//Return stop info for 5 closest stops that have > 0 shuttles running.
-		$closestStops = array();
-		foreach ($locations as $key => $info)
-		{
-  		$stop = array();
-  		$stops = array();
-      if ($info["isAnyRunning"]) {
-        foreach ($info['routes'] as $routeID => $stopTimes) {
-          $stops[] = formatStopInfo($routeID, $info["stopID"], $info, $stopTimes);
-        }
-        $stop['stops'] = $stops;
-				$closestStops[] = $stop;
+		$closestStops = $view->getClosestStopInfo(5, $lat_phone, $lon_phone); 
+    foreach ($closestStops as $key => $stopInfo)
+    {
+      $time = time();
+      $stops = array();
+      $fClosestStop = array();
+      foreach ($stopInfo['routes'] as $routeID => $stopTimes) {
+        $stops[] = formatStopInfo($routeID, $stopInfo["id"], $stopInfo, $stopTimes); 
       }
-			if (count($closestStops) >= 5) break;
-		}
-		$data["closestStops"] = $closestStops;
-    */
+      $fClosestStop['stops'] = $stops;
+      $fClosestStop['now'] = $time;
+      $fClosestStops[] = $fClosestStop;
+    }
+    $data['closestStops'] = $fClosestStops;
     break;
 
   case 'stopInfo':
@@ -226,6 +200,7 @@ function formatStopForRouteInfo($stopID, $stopInfo) {
 }
 
 function formatStopInfo($routeID, $stopID, $stopInfo, $stopTimes) {
+
   $stop = array(
     'id'          => "$stopID",
     'stop_title'  => $stopInfo['name'],
