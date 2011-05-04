@@ -1,5 +1,5 @@
 <?php
-
+//error_reporting(0);
 $docRoot = getenv("DOCUMENT_ROOT");
 require_once $docRoot . "/mobi-config/mobi_web_constants.php";
 require_once WEBROOT . "api/api_header.php";
@@ -18,11 +18,11 @@ $allstops = array("mass84_d","massbeac","comm487","commsher","comm478","beacmass
 
 switch ($command) {
   case 'locInfo':
+		echo "Starting";
     $view = new TransitDataView();
 		$lat_phone = $_REQUEST['lat'];
     $lon_phone = $_REQUEST['lon'];
 		$locations = Array();
-    //$routesInfo = $view->getRoutes();
 		
 		//Sort stops by distance away from phone... and note if a stop has any routes running.
 		foreach ($allstops as $key => $stopId){
@@ -44,6 +44,7 @@ switch ($command) {
 		ksort($locations);
     
 		//Return stop info for 5 closest stops that have > 0 shuttles running.
+		$closestStops = array();
 		foreach ($locations as $key => $info)
 		{
   		$stop = array();
@@ -53,11 +54,11 @@ switch ($command) {
           $stops[] = formatStopInfo($routeID, $info["stopID"], $info, $stopTimes);
         }
         $stop['stops'] = $stops;
-				$data[] = $stop;
+				$closestStops[] = $stop;
       }
-			if (count($data) >= 5) break;
+			if (count($closestStops) >= 5) break;
 		}
-
+		$data["closestStops"] = $closestStops;
     break;
 
   case 'stopInfo':
@@ -80,9 +81,10 @@ switch ($command) {
     break;
     
   case 'routes': // static info about all routes
+		$t = microtime(True);
     $view = new TransitDataView();
     $routesInfo = $view->getRoutes();
-    
+    echo microtime(True) - $t;
     foreach ($routesInfo as $routeID => $routeInfo) {
       $entry = formatRouteInfo($routeID, $routeInfo);
       

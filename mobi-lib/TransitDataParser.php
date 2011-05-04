@@ -173,7 +173,6 @@ class TransitDataView {
     $stopInfo = array();
     $cacheName = "stopInfoForRoute.$routeID.$stopID";
     $cache = self::getViewCache();
-    
     if ($cache->isFresh($cacheName) && !$this->daemonMode) {
       $stopInfo = json_decode($cache->read($cacheName), true);
     
@@ -211,16 +210,13 @@ class TransitDataView {
     
     return $stopInfo;
   }
-  
-  public function getLocInfo($lat, $lon) {
-				 	
-	}
 
   public function getStopInfo($stopID) {
     $stopInfo = array();
     $cacheName = "stopInfo.$stopID";
     $cache = self::getViewCache();
-
+        if ($cache->isFresh($cacheName)) echo "true";
+		else echo "false";
     if ($cache->isFresh($cacheName) && !$this->daemonMode) {
       $stopInfo = json_decode($cache->read($cacheName), true);
       
@@ -325,7 +321,8 @@ class TransitDataView {
     $routeInfo = array();
     $cacheName = "routeInfo.$routeID";
     $cache = self::getViewCache();
-    
+    if ($cache->isFresh($cacheName)) echo "true";
+		else echo "false";
     if ($cache->isFresh($cacheName) && $time == null && !$this->daemonMode) {
       $routeInfo = json_decode($cache->read($cacheName), true);
       
@@ -500,7 +497,8 @@ class TransitDataView {
     $allRoutes = array();
     $cacheName = 'allRoutes';
     $cache = self::getViewCache();
-    
+    if ($cache->isFresh('allRoutes')) echo "true";
+		else echo "false";
     if ($cache->isFresh($cacheName) && $time == null && !$this->daemonMode) {
       $allRoutes = json_decode($cache->read($cacheName), true);
       
