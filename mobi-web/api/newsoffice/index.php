@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 $docRoot = getenv("DOCUMENT_ROOT");
 require_once $docRoot . '/mobi-config/mobi_web_constants.php';
 require_once WEBROOT . "api/api_header.php";

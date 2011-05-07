@@ -1,5 +1,5 @@
 <?php
-//error_reporting(0);
+error_reporting(0);
 $docRoot = getenv("DOCUMENT_ROOT");
 require_once $docRoot . "/mobi-config/mobi_web_constants.php";
 require_once WEBROOT . "api/api_header.php";
@@ -11,10 +11,7 @@ require_once LIBDIR."TransitDataParser.php";
 $data = Array();
 $command = $_REQUEST['command'];
 
-//$allstops = array("mass84_d","massbeac","comm487","commsher","comm478","beacmass","mass77","edge","kendsq_d","amhewads","medilab","kres","burtho","tangwest","w92ames","simmhl","vassmass","statct","massnewb","beac528","bays111","bays155","stpaul259","manc58","here32","nw10","nw30","nw86","nw61","mainwinds","porthamp","camb638","camb5th","6thcharl","elotmain","amesbld66","mitmed","kendsq","wadse40","mccrmk","newho","ww15","brookchest","putmag","rivfair","rivpleas","rivfrank","sydgreen","paci70","whou");
-
 //error_log("API COMMAND $command...");
-
 
 switch ($command) {
   case 'locInfo':
@@ -60,10 +57,8 @@ switch ($command) {
     break;
     
   case 'routes': // static info about all routes
-		$t = microtime(True);
     $view = new TransitDataView();
     $routesInfo = $view->getRoutes();
-    echo microtime(True) - $t;
     foreach ($routesInfo as $routeID => $routeInfo) {
       $entry = formatRouteInfo($routeID, $routeInfo);
       
@@ -96,7 +91,6 @@ switch ($command) {
       $routeInfo = $view->getRouteInfo($routeID);
       $paths = $view->getRoutePaths($routeID);
       $vehicles = $view->getRouteVehicles($routeID);
-      
       $pathAdded = false;
       $stops = array();
       foreach ($routeInfo['stops'] as $stopID => $stopInfo) {
@@ -200,18 +194,28 @@ function formatStopForRouteInfo($stopID, $stopInfo) {
 }
 
 function formatStopInfo($routeID, $stopID, $stopInfo, $stopTimes) {
-
+  if (!isset($stopTimes['arrives'])) {
+    $stopTimes['arrives'] = -1;
+  }
   $stop = array(
     'id'          => "$stopID",
     'stop_title'  => $stopInfo['name'],
     'route_id'    => "$routeID",
 		'route_title' => $stopInfo['routes'][$routeID]['name'],
     'lat'         => $stopInfo['coordinates']['lat'],
-    'lat'         => $stopInfo['coordinates']['lat'],
     'lon'         => $stopInfo['coordinates']['lon'],
     'next'        => (int)$stopTimes['arrives'],
     'gps'         => $stopTimes['live'],
+    'show_dir'    => false,
   );
+  
+  //TODO: Place this static list somewhere better.
+  if ($stopID == 'beacmass' || $stopID == 'massbeac') {
+    $stop['show_dir'] = true;
+  }
+  if (isset($stopInfo['direction'])) {
+    $stop['direction'] = $stopInfo['direction'];
+  }
   if (isset($stopTimes['predictions']) && count($stopTimes['predictions']) > 1) {
     array_shift($stopTimes['predictions']); // remove prediction corresponding to $stop['next']
     $stop['predictions'] = $stopTimes['predictions'];

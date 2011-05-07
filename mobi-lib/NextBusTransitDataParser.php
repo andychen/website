@@ -51,19 +51,29 @@ class NextBusTransitDataParser extends TransitDataParser {
     return $vehicles;
   }
 
-  protected function updatePredictionData($routeID) {
-    if (isset($this->predictionDataLoaded[$routeID])) {
-      return; // already loaded
+  protected function updatePredictionData($routeIDs) {
+    //Allow backward compatibility for calls with a single routeID as a parameter.
+    if (gettype($routeIDs) != gettype(array())) {
+      $routeIDs = array($routeIDs);
     }
     
-    $route = $this->getRoute($routeID);
-    if (!$route) { return; }
-
     $stopList = array();
-    foreach ($route->getStops() as $stop) {
-      $stopList[] = $routeID.'|null|'.$stop['stopID'];
-    }
+    
+    //For all non-loaded routes, add their stops to the query. 
+    foreach ($routeIDs as $key => $routeID) {
+      if (isset($this->predictionDataLoaded[$routeID])) {
+        continue; // already loaded
+      }
+      
+      $route = $this->getRoute($routeID);
+      if (!$route) { continue; }
 
+      foreach ($route->getStops() as $stop) {
+        $stopList[] = $routeID.'|null|'.$stop['stopID'];
+      }
+    }
+  
+    //Make the single query for all combinations of routes and stops.
     if (count($stopList)) {
       $xml = $this->queryNextBus(array(
         'command' => 'predictionsForMultiStops',
@@ -71,38 +81,46 @@ class NextBusTransitDataParser extends TransitDataParser {
         'stops'   => $stopList,
       ), $age);
       
+      //Store route predictions by routeID... 
       if ($xml) {
-        $routePredictions = array();
+        $allRoutePredictions = array();
 
         foreach ($xml->getElementsByTagName('predictions') as $predictions) {
+          $routeID = $predictions->attributes->getNamedItem('routeTag')->nodeValue;
           $stopID = $predictions->attributes->getNamedItem('stopTag')->nodeValue;
-  
+          if (!isset($allRoutePredictions[$routeID])) {
+            $allRoutePredictions[$routeID] = array();
+          }
           foreach ($predictions->getElementsByTagName('prediction') as $prediction) {
             $attributes = $prediction->attributes;
             $directionID = self::getDirectionID($routeID, $attributes->getNamedItem('dirTag')->nodeValue);
             $offset = intval($attributes->getNamedItem('seconds')->nodeValue) + $age;
             
-            if (!isset($routePredictions[$directionID])) {
-              $routePredictions[$directionID] = array();
+            if (!isset($allRoutePredictions[$routeID][$directionID])) {
+              $allRoutePredictions[$routeID][$directionID] = array();
             }
-            if (!isset($routePredictions[$directionID][$stopID])) {
-              $routePredictions[$directionID][$stopID] = array();
+            if (!isset($allRoutePredictions[$routeID][$directionID][$stopID])) {
+              $allRoutePredictions[$routeID][$directionID][$stopID] = array();
             }
-            $routePredictions[$directionID][$stopID][] = $offset;
+            $allRoutePredictions[$routeID][$directionID][$stopID][] = $offset;
           }
           unset($prediction);
         } 
         unset($predictions);
         
-        foreach ($routePredictions as $directionID => $directionPredictions) {
-          foreach ($directionPredictions as $stopID => $stopPredictions) {
-            $route->setStopPredictions($directionID, $stopID, $stopPredictions);
+        //...then set each route's stops.
+        foreach ($allRoutePredictions as $routeID => $routePredictions) {
+          foreach ($routePredictions as $directionID => $directionPredictions) {
+            foreach ($directionPredictions as $stopID => $stopPredictions) {
+              $route->setStopPredictions($directionID, $stopID, $stopPredictions);
+            }
           }
+          $this->predictionDataLoaded[$routeID] = true;
         }
-      }
+      }// End if($xml)
     }
-    $this->predictionDataLoaded[$routeID] = true;
   }
+  
 
   protected function loadData($agencyIDs, $routeIDs, $args) {
     if (isset($args['agencyRemap'])) {
@@ -183,6 +201,7 @@ class NextBusTransitDataParser extends TransitDataParser {
             continue;
           }
           
+
           $directionID = self::getDirectionID($routeID, $attributes->getNamedItem('tag')->nodeValue);
           
           if (!isset($directions[$directionID])) {
@@ -198,9 +217,10 @@ class NextBusTransitDataParser extends TransitDataParser {
             }
             $directions[$directionID]['name'] .= $attributes->getNamedItem('title')->nodeValue;
           }
-          
+
           foreach ($direction->getElementsByTagName('stop') as $index => $stop) {
             $stopID = $stop->attributes->getNamedItem('tag')->nodeValue;
+            $this->getStop($stopID)->addDirection($attributes->getNamedItem('title')->nodeValue);
             $directions[$directionID]['stops'][$stopID] = array(
               'stop'     => $stopID,
               'sequence' => $stopOrder[$stopID], //$index,
@@ -422,12 +442,12 @@ class NextBusTransitDataParser extends TransitDataParser {
     $xml = new DOMDocument();
     $xml->loadXML($text);
     
-    $errorCount = 0;
+    $errorsCount = 0;
     foreach ($xml->getElementsByTagName('Error') as $error) {
       error_log($error->nodeValue);
       $errorsCount++;
     }
-    if ($errorCount == 0) {
+    if ($errorsCount == 0) {
       return $xml;
     }
     return false;
@@ -489,6 +509,11 @@ class NextBusTransitDataParser extends TransitDataParser {
       switch ($params['command']) {
         case 'routeList': 
           $cacheKey = 'routes';
+          $cacheTimeout = NEXTBUS_ROUTE_CACHE_TIMEOUT;
+          break;
+          
+        case 'locInfo': 
+          $cacheKey = 'loc';
           $cacheTimeout = NEXTBUS_ROUTE_CACHE_TIMEOUT;
           break;
 
