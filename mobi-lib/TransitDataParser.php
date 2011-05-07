@@ -170,99 +170,111 @@ class TransitDataView {
   }
 
   public function getClosestStopInfo($num, $lat_phone, $lon_phone) {
-  
-    $locations = array();
-		$closestStops = array();
-    
-    //Get list of routes.
-    //$excludeList = array('evening', 'midday', 'morning');
-		$routeList = $this->getRoutes();
-    
-    //Key: stopID. Value: routeIDs of running routes associated with the stopID. 
-    $stopToRoutes = array();
-    
-    //For each running route...
-		foreach ($routeList as $routeID => $routeInfo) {
-      //if (in_array($routeID, $excludeList)) continue;
-      if ($routeInfo["running"]){
-        //...for each stop 
-        foreach ($routeInfo["stops"] as $stopID => $stopInfo) {
-          if (!in_array($stopID, $locations)) {
-            $locations[strval($this->getDistance($lat_phone, $lon_phone, $stopInfo["coordinates"]["lat"], $stopInfo["coordinates"]["lon"]))] = $stopID;
-          }
-          $stopToRoutes[$stopID][] = $routeID;
-        }
-      }
-    }
-    ksort($locations);
-
-    //Extract routes to update from closest 5 stops.
-    $closestStops = array();
-    $routesToUpdate = array();
-		foreach ($locations as $key => $stopID)
-		{
-      $routes = $stopToRoutes[$stopID];
-      foreach ($routes as $key => $routeID) {
-        if (!in_array($routeID, $routesToUpdate)) {
-          $routesToUpdate[] = $routeID;        
-        }
-      }
-      $closestStops[$stopID] = $stopToRoutes[$stopID];
-      if (sizeof($closestStops) >= $num) break;
-    }
-
-    $parser = $this->parsers[0];
-    if ($parser['live']) {
-      $closestStopInfo = $parser['live']->getClosestStopInfo($closestStops, $routesToUpdate);
-    }
-
-//    echo json_encode($closestStopInfo);
-
     $result = array();
-    //For each stop...
-    foreach ($closestStopInfo as $key => $stopInfo) {
-      $stopID = $stopInfo['id'];
-      foreach($routeList as $routeID => $routeInfo) {
-        if (array_key_exists($stopID, $routeInfo['stops'])) {
-          $staticRouteInfo = $parser['static']->getRouteInfo($routeID);
-          $stopInfo['name'] = $staticRouteInfo['stops'][$stopID]['name'];
-          break;
+    $cacheName = 'closestStops';
+    $cache = self::getViewCache();
+//    /*
+    if ($cache->isFresh($cacheName) && $time == null && !$this->daemonMode) {
+      $result = json_decode($cache->read($cacheName), true);      
+    }
+    else {
+//    */
+      $locations = array();
+  		$closestStops = array();
+      
+      //Get list of routes.
+      //$excludeList = array('evening', 'midday', 'morning');
+  		$routeList = $this->getRoutes();
+      
+      //Key: stopID. Value: routeIDs of running routes associated with the stopID. 
+      $stopToRoutes = array();
+      
+      //For each running route...
+  		foreach ($routeList as $routeID => $routeInfo) {
+        //if (in_array($routeID, $excludeList)) continue;
+        if ($routeInfo["running"]){
+          //...for each stop 
+          foreach ($routeInfo["stops"] as $stopID => $stopInfo) {
+            if (!in_array($stopID, $locations)) {
+              $locations[strval($this->getDistance($lat_phone, $lon_phone, $stopInfo["coordinates"]["lat"], $stopInfo["coordinates"]["lon"]))] = $stopID;
+            }
+            $stopToRoutes[$stopID][] = $routeID;
+          }
         }
-      } 
-      //...for each route...
-      foreach ($stopInfo['routes'] as $routeID => $routeInfo) {
-        //...update predictions and arrival times like with getStopInfo
-        /*
-        if ($parser['static']) {
-          $staticStopInfo = $parser['static']->getClosestStopInfo($routeID, $stopID);
+      }
+      ksort($locations);
+  
+      //Extract routes to update from closest 5 stops.
+      $closestStops = array();
+      $routesToUpdate = array();
+  		foreach ($locations as $key => $stopID)
+  		{
+        $routes = $stopToRoutes[$stopID];
+        foreach ($routes as $key => $routeID) {
+          if (!in_array($routeID, $routesToUpdate)) {
+            $routesToUpdate[] = $routeID;        
+          }
         }
-        if (!isset($stopInfo['arrives']) || $staticStopInfo['arrives'] < $stopInfo['arrives']) {
-            $stopInfo['arrives'] = $staticStopInfo['arrives'];
-        }
-        if (!isset($stopInfo['predictions'])) {
-          $stopInfo['predictions'] = $staticStopInfo['predictions'];
-          
-        }
-        else if (count($staticStopInfo['predictions'])) {
-          $stopInfo['predictions'] = array_merge($stopInfo['predictions'], $staticStopInfo['predictions']);
-          
-          $stopInfo['predictions'] = array_unique($stopInfo['predictions']);
-          sort($stopInfo['predictions']);
-        }
-        */
-        //...update route stops and names as with getAllRoutes
-        $staticRouteInfo = $parser['static']->getRouteInfo($routeID);
-        $routeInfo['name'] = $staticRouteInfo['name'];
-        $routeInfo['description'] = $staticRouteInfo['description'];
-        if ($staticRouteInfo['frequency'] != 0) { // prefer static
-          $routeInfo['frequency'] = $staticRouteInfo['frequency'];
-        }
-        $stopInfo['routes'][$routeID] = $routeInfo;
-      } //end each route
-      $result[] = $stopInfo;
-    } //end each stop
+        $closestStops[$stopID] = $stopToRoutes[$stopID];
+        if (sizeof($closestStops) >= $num) break;
+      }
+  
+      $parser = $this->parsers[0];
+      if ($parser['live']) {
+        $closestStopInfo = $parser['live']->getClosestStopInfo($closestStops, $routesToUpdate);
+      }
+  
+  //    echo json_encode($closestStopInfo);
 
-//    echo "FINAL".json_encode($result)."FINALEND";
+      //For each stop...
+      foreach ($closestStopInfo as $key => $stopInfo) {
+        $stopID = $stopInfo['id'];
+        foreach($routeList as $routeID => $routeInfo) {
+          if (array_key_exists($stopID, $routeInfo['stops'])) {
+            $staticRouteInfo = $parser['static']->getRouteInfo($routeID);
+            $stopInfo['name'] = $staticRouteInfo['stops'][$stopID]['name'];
+            break;
+          }
+        } 
+        //...for each route...
+        foreach ($stopInfo['routes'] as $routeID => $routeInfo) {
+          //...update predictions and arrival times like with getStopInfo
+          /*
+          if ($parser['static']) {
+            $staticStopInfo = $parser['static']->getClosestStopInfo($routeID, $stopID);
+          }
+          if (!isset($stopInfo['arrives']) || $staticStopInfo['arrives'] < $stopInfo['arrives']) {
+              $stopInfo['arrives'] = $staticStopInfo['arrives'];
+          }
+          if (!isset($stopInfo['predictions'])) {
+            $stopInfo['predictions'] = $staticStopInfo['predictions'];
+            
+          }
+          else if (count($staticStopInfo['predictions'])) {
+            $stopInfo['predictions'] = array_merge($stopInfo['predictions'], $staticStopInfo['predictions']);
+            
+            $stopInfo['predictions'] = array_unique($stopInfo['predictions']);
+            sort($stopInfo['predictions']);
+          }
+          */
+          //...update route stops and names as with getAllRoutes
+          $staticRouteInfo = $parser['static']->getRouteInfo($routeID);
+          $routeInfo['name'] = $staticRouteInfo['name'];
+          $routeInfo['description'] = $staticRouteInfo['description'];
+          if ($staticRouteInfo['frequency'] != 0) { // prefer static
+            $routeInfo['frequency'] = $staticRouteInfo['frequency'];
+          }
+          $stopInfo['routes'][$routeID] = $routeInfo;
+        } //end each route
+        $result[] = $stopInfo;
+      } //end each stop
+// /*
+//      $t = microtime(true);
+      $cache->write(json_encode($result), $cacheName);
+//      echo microtime() - t;
+    } //end else
+// */
+    //    echo "FINAL".json_encode($result)."FINALEND";
     return $result;
   }
 
@@ -592,6 +604,7 @@ class TransitDataView {
     $allRoutes = array();
     $cacheName = 'allRoutes';
     $cache = self::getViewCache();
+    $t = microtime(true);
     if ($cache->isFresh($cacheName) && $time == null && !$this->daemonMode) {
       $allRoutes = json_decode($cache->read($cacheName), true);      
     } else {
